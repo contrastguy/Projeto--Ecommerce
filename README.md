@@ -1,2 +1,3 @@
 # Projeto--Ecommerce
-_Ecommerce B2C2C  de Loja de Roupas _
+Ecommerce B2C2C de uma Loja de Roupas 
+
