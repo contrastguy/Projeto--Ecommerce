@@ -194,8 +194,10 @@ h4{
     text-align: center;
     font: normal normal 900 30px/40px Futura Std;
     letter-spacing: 0px;
-    background: #535151 0% 0% no-repeat padding-box;
+    background: #F50057 0% 0% no-repeat padding-box;
     opacity: 1;
+    border: none;
+    border-radius: 10px;
 }
 
 footer{
@@ -246,8 +248,9 @@ p{
     width: 60%;
     height: 47px;
     margin-bottom: 8px;
-    background: #535151 0% 0% no-repeat padding-box;
-    opacity: 1
+    background: #F50057 0% 0% no-repeat padding-box ;
+    opacity: 1;
+    border: none;
 }
 
 .botaoins{
@@ -258,6 +261,7 @@ p{
     opacity: 1;
     color: #FFFFFF;
     font-size: 20px;
+    border: none;
 }
 
 .divdireita{
