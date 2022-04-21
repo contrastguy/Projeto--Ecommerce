@@ -112,7 +112,6 @@ li{
 }
 
 #box{
-    margin-top: 5vh;
     margin-right: 1vw;
     width: 26px;
     height: 26px;
@@ -120,12 +119,13 @@ li{
 }
 
 a{
-    text-decoration:underline;
+    text-decoration: none;
+    font-weight: bolder;
     color: #535151;
 }
 
 h4{
-    font: normal normal bold 18px Montserrat;
+    font: normal normal 18px Montserrat;
     letter-spacing: 0px;
     color: #535151; 
 }
@@ -190,17 +190,17 @@ p{
 }
 
 .emailmeio{
+    text-align: center;
     width: 60%;
     height: 5vh;
     margin-bottom: 1vh;
     background: #F50057 0% 0% no-repeat padding-box ;
     opacity: 1;
     border: none;
-    font: normal normal bold 20px/24px Montserrat;
+    font: normal normal  20px/24px Montserrat;
     letter-spacing: 0px;
     color: #FFFFFF;
-    opacity: 1;
-    text-align: center;
+    opacity: 1;         
 }
 
 .botaoins{
@@ -212,7 +212,7 @@ p{
     color: #FFFFFF;
     font-size: 15px;
     border: none;
-    font: normal normal bold 18px/24px Montserrat;
+    font: normal normal 18px/24px Montserrat;
     letter-spacing: 0px;
     color: #535151;
     opacity: 1;
