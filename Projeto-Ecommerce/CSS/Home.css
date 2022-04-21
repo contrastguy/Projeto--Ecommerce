@@ -1,3 +1,323 @@
-body{
-    background-color: black;;
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #EFEFEF;
+    font-family: 'Bebas Neue', "cursive";
+    font-family: 'Montserrat', sans-serif
+    }
+
+header{
+    background-color: white;
+    height: 36.7rem;
+    text-align: center;
+}
+
+li{
+    list-style: none;
+}
+
+#gray-bar{
+    background-color: #535151;
+    height: 5.0rem
+}
+
+#logo-home{
+    margin-top: 3.2rem;
+    width: 51.3rem
+}
+
+#menu{
+    margin-top: 4.78rem;
+    display: flex;
+    justify-content: center;
+    gap: 13.0rem;
+}
+
+#menu a{
+    text-decoration: none;
+    color: #707070;
+    font-family: 'Bebas Neue', "cursive";
+    font-size: 2.5rem;
+    line-height: 3.1rem;
+
+}
+
+#icons{
+    display: flex;
+    gap: 7.04rem;
+}
+
+#mainBanner{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#photo{
+
+    height: 59.0rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: center -29rem;
+}
+
+#searchContainer{
+    margin: 2rem;
+    display: flex;
+    position: absolute;
+}
+
+#searchContainer input{
+    
+    width: 85.0rem;
+    height: 6.7rem;
+    border-radius: 1.0rem;
+    border: none;
+    padding-left: 7rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.0rem;
+}
+
+#searchContainer form{
+    position: relative;
+}
+
+#search-icon{
+    position: absolute;
+    top: 21%;
+    left: 2%;
+}
+
+input:focus{
+    outline: none;
+}
+
+#products h1{
+    color: #6E6E6E;
+    font-family: 'Bebas Neue', "cursive";
+    font-size: 5.0rem;
+    line-height: 6.0rem;
+
+   text-align: center;
+
+   margin-top: 7.0rem;
+  
+}
+
+#filterProduct ul{
+    display: flex;
+    justify-content: center;
+    margin: 5.0rem auto;
+    list-style: none;
+    font-family: 'Bebas Neue', "cursive";
+    font-size: 2.5rem;
+    line-height: 0rem;
+    color: #6E6E6E;
+    gap: 7.0rem;
+}
+
+#filterProduct ul li {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    padding: 3rem 4.3rem;
+    border-radius: 1.5rem;
+    width: 15.2rem;
+    transition: all 300ms 00ms ;
+}
+
+#filterProduct li:hover{
+    background-color: #F50057;
+    color: white;
+    transform: scale(1.1);
+    cursor: pointer;
+    
+}
+
+#cardsContainer{
+    width: 140rem;
+    margin: auto;
+    
+}
+
+#cardsContainer ul{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.6rem;
+    
+    
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+.product-image{
+    width: 35rem;
+    height: 50rem;
+    object-fit: cover;
+    object-position: 0 0;
+
+    border-radius: 1rem 1rem 1rem 1rem;
+
+    opacity: 0.9
+
+    
+    
+}
+
+
+.product-image:hover{
+
+    transform: scale(1.03);
+    opacity: 1;
+    transition: all 200ms ease-in-out;
+
+}
+
+.img-container{
+    position: relative;
+    border-radius: 1rem;
+
+}
+
+
+
+.price-tag h3{
+    display: flex;
+    height: 7.5rem;
+    width: 100%;
+    background-color: #6E6E6E;
+
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 0.4rem;
+
+    color: white;
+    font-family: 'Bebas Neue', "cursive";
+    font-size: 2.5rem;
+    line-height: 0rem;
+    text-align: center;
+    font-weight: normal;
+
+    border-radius: 1rem;
+  
+}
+
+footer{
+    display:flex;
+    height: 41.5rem;
+    margin-top: 5rem;
+    padding: 8.5rem;
+
+    justify-content: center;
+    gap: 19.0rem;
+
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color:#303132;
+}
+
+#social h3,
+#subscription h3,
+#contact h3{
+    font-weight: bold;
+    font-size: 2.0rem;
+
+    margin-bottom: 4.5rem;
+}
+
+#social a img{
+    margin-right: 1.5rem
+}
+
+#subscription{
+    width: 46.0rem;
+    text-align: center;
+    font-size: 2.0rem;
+}
+
+#email{
+    width: 46.0rem;
+    height: 4.5rem;
+    background-color: #F50057; 
+    border: none;
+    margin-bottom: 1.0rem;
+
+}
+
+#email::placeholder{
+    color: white;
+    font-size: 2.0rem;
+    text-align: center;
+}
+
+#submit-email{
+    background-color: white;
+    width: 46.0rem;
+    height: 4.5rem;
+    border: none;
+    margin-bottom: 1.0rem;
+    color: #535151;
+
+    font-size: 2.0rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-bottom: 8.0rem
+}
+
+#contact p {
+    font-size: 2.0rem;
+    margin-bottom: 1.0rem;
+}
+
+/*---------------------------------ANIMATIONS---------------------*/ 
+
+
+.price-tag{
+    opacity: 0;
+    
+    
+    
+}
+
+
+
+.img-container:hover .price-tag{
+    animation: upwards 700ms forwards;
+    transform: scale(1.1);
+    
+    
+
+}
+
+@keyframes upwards{
+    0%{
+        opacity: 0;
+        transform:translateY(30px);
+       
+    }
+
+    100%{
+       opacity: 1;
+        transform:translateY(5px);
+ 
+    }
+}
+
