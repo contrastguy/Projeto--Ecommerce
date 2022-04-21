@@ -1,10 +1,19 @@
 body{
-    top: 0px;
-    left: 0px;
     width: 100%;
-    height: 1818px;
+    height: 100vh;
     background: #EFEFEF 0% 0% no-repeat padding-box;
     opacity: 1;
+}
+
+/* header{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 320px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    text-align: center;
 }
 
 .topo{
@@ -15,17 +24,6 @@ body{
     height: 50px;
     background: #535151 0% 0% no-repeat padding-box;
     opacity: 1;
-}
-
-header{
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 100%;
-    height: 320px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    opacity: 1;
-    text-align: center;
 }
 
 .logo{
@@ -42,7 +40,7 @@ header{
     height: 90px;
     background-color: #f7f8c2;
     
-}
+} 
 
 h1{
     text-align: left;
@@ -50,122 +48,75 @@ h1{
     letter-spacing: 0px;
     color: #959595;
     opacity: 1
-}
+} */
 
 .subT{
-    position: absolute;
-    top: 502px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 316px;
-    height: 60px;
+    text-align: center;
+    width: 100vw;
+    height: 25vh;
 }
 
 h2{
-    text-align: center;
+    margin-top: 20vh;
     font: normal normal bolder 22pt Bebas Neue;
     letter-spacing: 0px;
     color: #707070;
     opacity: 1
 }
+    
 
-#name{
-    position: absolute;
-    top: 700px;
-    right: 51%;
-    width: 27.5%;
-    height: 90px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #CBCBCB;
-    border-radius: 10px;
-    opacity: 1;
+main{
+    display: flex;
 }
 
-#email{
-    position: absolute;
-    top: 814px;
-    right: 51%;
-    width: 27.5%;
-    height: 90px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #CBCBCB;
-    border-radius: 10px;
-    opacity: 1;
+.cadaesquerdo{
+    width: 50vw;
+    text-align: right;
+    margin: 0px;
 }
 
-#pass{
-    position: absolute;
-    top: 928px;
-    right: 51%;
-    width: 27.5%;
-    height: 90px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #CBCBCB;
-    border-radius: 10px;
-    opacity: 1;
+.cadadireito{
+    width: 50vw;
+    text-align: left;
+    display: block;
+    margin: 0px;
 }
 
-#doc{
-    position: absolute;
-    top: 1042px;
-    right: 51%;
-    width: 27.5%;
-    height: 90px;
+input{
+    width: 65%;
+    height: 8.5vh;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #CBCBCB;
     border-radius: 10px;
+    opacity: 1;
+    margin: 8px 0px 8px 0px;
+    text-align: left;
+    font: normal normal normal 20px/40px Montserrat;
+    letter-spacing: 0px;
+    color: #959595;
     opacity: 1;
 }
+    
 
-#lastn{
-    position: absolute;
-    top: 700px;
-    left: 51%;
-    width: 27.5%;
-    height: 90px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #CBCBCB;
-    border-radius: 10px;
-    opacity: 1;
-}
 
-#coemail{
-    position: absolute;
-    top: 814px;
-    left: 51%;
-    width: 27.5%;
-    height: 90px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #CBCBCB;
-    border-radius: 10px;
-    opacity: 1;
-}
-
-#copass{
-    position: absolute;
-    top: 928px;
-    left: 51%;
-    width: 27.5%;
-    height: 90px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #CBCBCB;
-    border-radius: 10px;
-    opacity: 1;
+li{
+    list-style-type: none;
 }
 
 .termos{
     display: flex;
-    position: absolute;
-    top: 1042px;
-    left: 51%;
-    width: 27.5%;
-    height: 90px;
+    align-items: center;
+    width: 65%;
+    height: 10vh;
+    margin-top: 2vh;
 }
 
 #box{
-    margin-top: 32px;
+    margin-top: 5vh;
+    margin-right: 1vw;
     width: 26px;
     height: 26px;
+    
 }
 
 a{
@@ -180,15 +131,12 @@ h4{
 }
 
 .check{
-    height: 286px;
+    height: 30vh;
+    text-align: center;
 }
 
 #save{
-    position: absolute;
-    top: 1198px;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 90px;
+    height: 10vh;
     width: 35.1%;
     color: #FFFFFF;
     text-align: center;
@@ -198,75 +146,82 @@ h4{
     opacity: 1;
     border: none;
     border-radius: 10px;
+    margin-top: 7vh;
+    padding-bottom:10vh ;
 }
 
 footer{
-    display: flex;
-    position: absolute;
-    top: 1390px;
-    left: 0px;
-    bottom: 0;
-    margin-bottom: 0px;
+    display: flex;    
     width: 100%;
-    height: 470px;
+    height: 53vh;
     background: #303132 0% 0% no-repeat padding-box;
     opacity: 1
 }
 
 .divesquerda{
     width: 30%;
-    margin-top: 75px;
+    margin-top: 9vh;
     text-align: center;
     
     
 }
 
 .imagem{
-    width: 40px;
-    height: 40px;
-    padding: 5px;
+    width: 4vw;
+    height: 6.5vh;
+    padding: 0.6vw;
 }
 
 .divmeio{
     width: 40%;
-    margin-top: 75px; 
+    margin-top: 9vh; 
     text-align: center;
 }
 
 h3{
     color: #FFFFFF;
     font-size: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 0.6vh;
 }
 
 p{
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .emailmeio{
     width: 60%;
-    height: 47px;
-    margin-bottom: 8px;
+    height: 5vh;
+    margin-bottom: 1vh;
     background: #F50057 0% 0% no-repeat padding-box ;
     opacity: 1;
     border: none;
+    font: normal normal bold 20px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    text-align: center;
 }
 
 .botaoins{
-    width: 61.2%;
-    height: 47px;
-    margin-bottom: 79px;
+    width: 60.7%;
+    height: 5vh;
+    margin-bottom: 7vh;
     background: #D3D3D3 0% 0% no-repeat padding-box;
     opacity: 1;
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 15px;
     border: none;
+    font: normal normal bold 18px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #535151;
+    opacity: 1;
+    text-align: center;
 }
 
 .divdireita{
     width: 30%;
-    margin-top: 75px;
+    margin-top: 9vh;
     text-align: center;
 }
 
