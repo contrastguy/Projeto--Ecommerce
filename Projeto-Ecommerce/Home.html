@@ -18,38 +18,41 @@
         <header>
             <div id="gray-bar"></div>
             <a href="./Home.html">
-                <img src="./Images/Home/Logo.png" alt="Logo da OnlineShop">
+                <img src="./Images/Home/Logo.png" id="logo-home" alt="Logo da OnlineShop">
             </a>
 
-            <nav>
-                <a href="./Home.html">HOME</a> |
-                <a href="./GaleriaProdutos.html">COMPRAR</a> |
-                <a href="./Produtos.html">VENDER</a> |
+            <nav id="menu">
+                <a href="./Home.html">HOME</a> 
+                <a href="./GaleriaProdutos.html">COMPRAR</a> 
+                <a href="./Produtos.html">VENDER</a> 
                 <a href="./Home.html">CONTATO</a>
-
-                <a href="./Carrinho.html"><img src="./Images/Home/Carrinho de Compra.png" alt="Seu Carrinho de Compras"></a>
-                <a href="./PerfilUsuário.html"><img src="./Images/Home/PerfilUsuário.png" alt="Área de Perfil do Usuário / Login"></a>
+                <div id="icons">
+                    <a href="./Carrinho.html"><img src="./Images/Home/Carrinho de Compra.png" alt="Seu Carrinho de Compras"></a>
+                    <a href="./PerfilUsuário.html"><img src="./Images/Home/PerfilUsuário.png" alt="Área de Perfil do Usuário / Login"></a>
+                </div>    
             </nav>
         </header>
 
         <main>
             <section id="mainBanner">
-                <div id="bannerHome">
                     <img
-                        src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80"
-                        alt="Banner principal do site com uma moça segurando uma jaqueta">
-                </div>
+                        src="https://images.unsplash.com/photo-1623892866965-a832c7a46c0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                        alt="Banner principal do site com uma moça segurando uma jaqueta"
+                        id="photo">
+                        
+                        <div id="searchContainer">
+                            <form action="">
+                                <a href="#">
+                                    <img src="./Images/Home/Pesquisa Icone.png" alt="" id="search-icon">
+                                </a>
+                                <input type="text" id="search" name="search">
+                            </form> 
+                
+                        </div>
+                    </section>
+                   
 
-                <div id="searchContainer">
-                    <form action="">
-                        <a href="#">
-                            <img src="./Images/Home/Pesquisa Icone.png" alt="">
-                        </a>
-                        <input type="text" id="search" name="search">
-                    </form> 
-        
-                </div>
-            </section>
+              
 
             <section id="products">
                 <h1>LOREM IPSUM LOREM IPSUM LOREM</h1>
@@ -66,60 +69,92 @@
                 <div id="cardsContainer">
                     <ul>
                         <li>
+                            <div class="img-container">
                             <a href="#">
-                                <img
-                                    src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80"
-                                    alt="Imagem do Produto"> <div><h3>R$ 88,88 - Produto 1</h3></div> 
-                            </a>
+                                
+                                    <img
+                                        src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80"
+                                        class="product-image"
+                                        alt="Imagem do Produto"> <div class="price-tag"><h3>R$ 88,88 - Produto 1</h3></div> 
+                                </a>
+                            </div>
                         </li>
                         <li>
+                            <div class="img-container">
                             <a href="#">
-                                <img
-                                    src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80"
-                                    alt="Imagem do Produto"> <div><h3>R$ 88,88 - Produto 2</h3></div> 
-                            </a>
+                                
+                                    <img
+                                        src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80"
+                                        class="product-image"
+                                        alt="Imagem do Produto"> <div class="price-tag"><h3>R$ 88,88 - Produto 1</h3></div> 
+                                </a>
+                            </div>
                         </li>
                         <li>
+                            <div class="img-container">
                             <a href="#">
-                                <img
-                                    src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80"
-                                    alt="Imagem do Produto"> <div><h3>R$ 88,88 - Produto 3</h3></div> 
-                            </a>
+                                
+                                    <img
+                                        src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80"
+                                        class="product-image"
+                                        alt="Imagem do Produto"> <div class="price-tag"><h3>R$ 88,88 - Produto 1</h3></div> 
+                                </a>
+                            </div>
                         </li>
                         <li>
+                            <div class="img-container">
                             <a href="#">
-                                <img
-                                    src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80"
-                                    alt="Imagem do Produto"> <div><h3>R$ 88,88 - Produto 4</h3></div> 
-                            </a>
+                                
+                                    <img
+                                        src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80"
+                                        class="product-image"
+                                        alt="Imagem do Produto"> <div class="price-tag"><h3>R$ 88,88 - Produto 1</h3></div> 
+                                </a>
+                            </div>
                         </li>
                         <li>
+                            <div class="img-container">
                             <a href="#">
-                                <img
-                                    src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80"
-                                    alt="Imagem do Produto"> <div><h3>R$ 88,88 - Produto 5</h3></div> 
-                            </a>
+                                
+                                    <img
+                                        src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80"
+                                        class="product-image"
+                                        alt="Imagem do Produto"> <div class="price-tag"><h3>R$ 88,88 - Produto 1</h3></div> 
+                                </a>
+                            </div>
                         </li>
                         <li>
+                            <div class="img-container">
                             <a href="#">
-                                <img
-                                    src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80"
-                                    alt="Imagem do Produto"> <div><h3>R$ 88,88 - Produto 6</h3></div> 
-                            </a>
+                                
+                                    <img
+                                        src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80"
+                                        class="product-image"
+                                        alt="Imagem do Produto"> <div class="price-tag"><h3>R$ 88,88 - Produto 1</h3></div> 
+                                </a>
+                            </div>
                         </li>
                         <li>
+                            <div class="img-container">
                             <a href="#">
-                                <img
-                                    src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80"
-                                    alt="Imagem do Produto"> <div><h3>R$ 88,88 - Produto 7</h3></div> 
-                            </a>
+                                
+                                    <img
+                                        src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80"
+                                        class="product-image"
+                                        alt="Imagem do Produto"> <div class="price-tag"><h3>R$ 88,88 - Produto 1</h3></div> 
+                                </a>
+                            </div>
                         </li>
                         <li>
+                            <div class="img-container">
                             <a href="#">
-                                <img
-                                    src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80"
-                                    alt="Imagem do Produto"> <div><h3>R$ 88,88 - Produto 8</h3></div> 
-                            </a>
+                                
+                                    <img
+                                        src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80"
+                                        class="product-image"
+                                        alt="Imagem do Produto"> <div class="price-tag"><h3>R$ 88,88 - Produto 1</h3></div> 
+                                </a>
+                            </div>
                         </li>
 
                     </ul>
@@ -141,7 +176,7 @@
                 <h3>RECEBA OFERTAS</h3>
                 <form action="">
                     <input type="email" id="email" name="email" placeholder="Coloque seu e-mail aqui!">
-                    <input type="submit" value="SE INSCREVA">
+                    <input type="submit" value="SE INSCREVA" id="submit-email">
                 </form>
                 <p>2022 by TERA</p>
             </div>
