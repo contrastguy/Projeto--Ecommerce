@@ -1,3 +1,219 @@
-body{
-    background-color: black;;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    margin: 0;
+}
+
+#linhaInício {
+    width: 100%;
+    height: 2vh;
+    background: #535151;
+    opacity: 1;
+}
+
+#head {
+    width: 100%;
+    height: 25vh;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+h1 {
+    font-size: 100px;
+    ;
+    color: #959595;
+    ;
+    font-family: 'Bebas Neue', cursive;
+    margin-block-start: 0.27em;
+    margin-block-end: 0.27em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+nav>ul>li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 40px;
+    font-size: 25px;
+    color: #707070;
+    font-family: 'Bebas Neue', cursive;
+}
+
+main {
+    background-color: #EFEFEF;
+}
+
+#caracteristicas {
+    width: 356px;
+    height: 492px;
+    transform: translateY(-70%);
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    font-family: 'Bebas Neue', cursive;
+    color: #6E6E6E;
+
+}
+
+#caracteristicas>h3 {
+    font-size: 40px;
+    margin: 20px 0 20px 0;
+}
+
+#caracteristicas>h4 {
+    font-size: 30px;
+    margin: 20px 0 20px 0;
+}
+
+#caracteristicas>ul {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    font-family:Montserrat, Regular; 
+}
+
+
+
+#caracteristicas>ul>li {
+    display: inline-block;
+    list-style-type: none;
+    padding-right: 5px;
+
+}
+
+#caracteristicas>button {
+    width: 356px;
+    height: 39px;
+    background: #F50057 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 1;
+    font-family:Montserrat, Bold; 
+        
+}
+
+#caracteristicas>button>b{
+    color:#FFFFFF
+}
+
+#addcarrinho {
+    width: 305px;
+    height: 39px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #6E6E6E;
+    border-radius: 10px;
+    opacity: 1;
+    font-family:Montserrat, Regular; 
+}
+
+#curtir {
+    width: 44px;
+    height: 39px;
+    background: #F50057 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border-radius: 10px;
+}
+
+#tamanho {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat, Regular;
+    font-size: 15px;
+    border: 5px;
+
+}
+
+#tamanho>button {
+    height: 35px;
+    margin-top: 15px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    opacity: 1;
+    font-family:Montserrat, Regular; 
+}
+
+
+#cor {
+    width: 100px;
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat, Regular;
+    font-size: 15px;
+    border: 5px;
+
+}
+
+#cor>button {
+    margin-top: 15px;
+    font-family:Montserrat, Regular; 
+}
+
+#quantidade {
+    width: 100px;
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat, Regular;
+    font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    ;
+
+}
+
+#quantidade>button {
+    margin-top: 10px;
+    height: 40px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.conteudoPrincipal {
+    position: relative;
+    height: 90vh;
+}
+
+#img1 {
+    width: 500px;
+    height: 500px;
+    background: #6E6E6E;
+    transform: translateY(-70%);
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+
+#descriçao {
+    position: absolute;
+    bottom: 50px;
+    left: 20%;
+    width: 50vw
+}
+
+.float-pai {
+    width: 140px; 
+}
+
+.float-filho {            /* deixar todos os três quadrados menores , usando o float */
+    width: 25%;
+    float: left;
+    background-color: #6E6E6E;
+    height: 35px;
+    margin-left: 10px;
+}
+
+#imagens {
+    position: absolute;
+    bottom: 240px;
+    left: 19.5%;
+    width: 50vw
 }
