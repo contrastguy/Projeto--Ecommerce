@@ -14,26 +14,23 @@ body {
 
 #head {
     width: 100%;
-    height: 25vh;
+    height: 30vh;
     background: #FFFFFF;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
+    align-items: center;
 }
 
-h1 {
-    font-size: 100px;
-    ;
-    color: #959595;
-    ;
-    font-family: 'Bebas Neue', cursive;
-    margin-block-start: 0.27em;
-    margin-block-end: 0.27em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
 
+
+#Logo {
+    width: 450px;
+    height: 150px;
+    margin-top: 35px;
+    ;
+}
 
 nav>ul>li {
     display: inline-block;
@@ -74,7 +71,7 @@ main {
     padding: 0;
     display: flex;
     align-items: center;
-    font-family:Montserrat, Regular; 
+    font-family: Montserrat, Regular;
 }
 
 
@@ -92,12 +89,12 @@ main {
     background: #F50057 0% 0% no-repeat padding-box;
     border-radius: 10px;
     opacity: 1;
-    font-family:Montserrat, Bold; 
-        
+    font-family: Montserrat, Bold;
+
 }
 
-#caracteristicas>button>b{
-    color:#FFFFFF
+#caracteristicas>button>b {
+    color: #FFFFFF
 }
 
 #addcarrinho {
@@ -107,7 +104,7 @@ main {
     border: 1px solid #6E6E6E;
     border-radius: 10px;
     opacity: 1;
-    font-family:Montserrat, Regular; 
+    font-family: Montserrat, Regular;
 }
 
 #curtir {
@@ -135,7 +132,7 @@ main {
     border: 1px solid #707070;
     border-radius: 10px;
     opacity: 1;
-    font-family:Montserrat, Regular; 
+    font-family: Montserrat, Regular;
 }
 
 
@@ -152,7 +149,7 @@ main {
 
 #cor>button {
     margin-top: 15px;
-    font-family:Montserrat, Regular; 
+    font-family: Montserrat, Regular;
 }
 
 #quantidade {
@@ -196,14 +193,27 @@ main {
     position: absolute;
     bottom: 50px;
     left: 20%;
-    width: 50vw
+    width: 50vw;
+    color: #6E6E6E;
+    font-family: Montserrat, Bold;
+}
+
+#txtdescriçao {
+    width: 813px;
+    height: 57px;
+    padding-top: 20px;
+    font: normal normal normal 15px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #6E6E6E;
+    opacity: 1;
 }
 
 .float-pai {
-    width: 140px; 
+    width: 140px;
 }
 
-.float-filho {            /* deixar todos os três quadrados menores , usando o float */
+.float-filho {
+    /* deixar todos os três quadrados menores , usando o float */
     width: 25%;
     float: left;
     background-color: #6E6E6E;
@@ -216,4 +226,89 @@ main {
     bottom: 240px;
     left: 19.5%;
     width: 50vw
+}
+
+footer {
+    height: 400px;
+    background-color: #303132;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font: normal normal normal 20px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.conteudofooter {
+    width: 100%;
+    height: 274px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#sigaredes {
+
+    font-size: 20px;
+    font-family: Montserrat, Regular;
+    color: #FFFFFF;
+    text-align: center;
+    padding-left: 10px;
+}
+
+#sigaredes>img {
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+}
+
+
+#recebaofertas {
+    margin: 125px;
+    font-size: 20px;
+    font-family: Montserrat, Regular;
+    color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+#recebaofertas>input {
+    padding-top: 5px;
+    width: 450px;
+    height: 30px;
+    background-color: #F50057;
+    font-family: Montserrat, Regular;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+
+#recebaofertas>input::placeholder {
+    color: #FFFFFF;
+    font-size: 20px;
+    text-align: center;
+}
+
+#recebaofertas>button {
+    width: 458px;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: #FFFFFF;
+    font: normal normal bold 20px/24px Montserrat;
+    color: #535151;
+}
+
+
+#faleconosco {
+
+    font-size: 20px;
+    font-family: Montserrat, Regular;
+    color: #FFFFFF;
+    text-align: center;
 }
