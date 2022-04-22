@@ -7,7 +7,7 @@ body{
 
 header{
     background-color: white;
-    height: 36.7rem;
+    height: 28rem;
     text-align: center;
 }
 
@@ -17,72 +17,33 @@ li{
 
 #gray-bar{
     background-color: #535151;
-    height: 5.0rem
+    height: 3rem
 }
 
 #logo-home{
-    margin-top: 3.2rem;
-    width: 51.3rem
+    margin-top: 3rem;
+    width: 38rem
 }
 
 #menu{
     margin-top: 4.78rem;
     display: flex;
     justify-content: center;
-    gap: 13.0rem;
+    gap: 9rem;
 }
 
 #menu a{
     text-decoration: none;
     color: #707070;
     font-family: 'Bebas Neue', "cursive";
-    font-size: 2.5rem;
-    line-height: 3.1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
 
 }
 
 #icons{
     display: flex;
-    gap: 7.04rem;
-}header{
-    background-color: white;
-    height: 36.7rem;
-    text-align: center;
-}
-
-li{
-    list-style: none;
-}
-
-#gray-bar{
-    background-color: #535151;
-    height: 5.0rem
-}
-
-#logo-home{
-    margin-top: 3.2rem;
-    width: 51.3rem
-}
-
-#menu{
-    margin-top: 4.78rem;
-    display: flex;
-    justify-content: center;
-    gap: 13.0rem;
-}
-
-#menu a{
-    text-decoration: none;
-    color: #707070;
-    font-family: 'Bebas Neue', "cursive";
-    font-size: 2.5rem;
-    line-height: 3.1rem;
-
-}
-
-#icons{
-    display: flex;
-    gap: 7.04rem;
+    gap: 3rem;
 }
 
 main{
@@ -140,7 +101,7 @@ input{
     width: 25vw;
     height: 9vh;
     background-color: #FFFFFF;
-    /* border-radius: 10px; */
+    border-radius: 10px;
     border: none; 
     text-align:start ;
     padding-left:3vw;
@@ -242,7 +203,7 @@ h2{
     border: 1px solid #CBCBCB;
     border-radius: 10px;
     opacity: 1;
-    font: normal normal normal 20px/40px Montserrat;
+    font: normal normal normal 1em Montserrat;
     letter-spacing: 0px;
     color: #959595;
     opacity: 1;
@@ -259,7 +220,7 @@ h2{
     border: 1px solid #CBCBCB;
     border-radius: 10px;
     opacity: 1;
-    font: normal normal bold 20px/40px Montserrat;
+    font: normal normal bold 1em Montserrat;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
@@ -306,7 +267,7 @@ p{
     font-size: 17px;
 }
 
-.emailmeio{
+#emailmeio{
     text-align: center;
     width: 60%;
     height: 5vh;
@@ -314,14 +275,15 @@ p{
     background: #F50057 0% 0% no-repeat padding-box ;
     opacity: 1;
     border: none;
-    font: normal normal  20px/24px Montserrat;
+    font: normal normal  1.2em Montserrat;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1; 
-    padding: 0;        
+    padding: 0;
+    border-radius: 0px;        
 }
 
-.botaoins{
+#botaoins{
     width: 60%;
     height: 5vh;
     margin-bottom: 7vh;
@@ -330,12 +292,13 @@ p{
     color: #FFFFFF;
     font-size: 15px;
     border: none;
-    font: normal normal 18px/24px Montserrat;
+    font: normal normal 1.2em Montserrat;
     letter-spacing: 0px;
     color: #535151;
     opacity: 1;
     text-align: center;
     padding: 0;
+    border-radius: 0px;
 }
 
 .divdireita{
