@@ -7,7 +7,7 @@ body{
 
 header{
     background-color: white;
-    height: 36.7rem;
+    height: 28rem;
     text-align: center;
 }
 
@@ -17,33 +17,33 @@ li{
 
 #gray-bar{
     background-color: #535151;
-    height: 5.0rem
+    height: 3rem
 }
 
 #logo-home{
-    margin-top: 3.2rem;
-    width: 51.3rem
+    margin-top: 3rem;
+    width: 38rem
 }
 
 #menu{
     margin-top: 4.78rem;
     display: flex;
     justify-content: center;
-    gap: 13.0rem;
+    gap: 9rem;
 }
 
 #menu a{
     text-decoration: none;
     color: #707070;
     font-family: 'Bebas Neue', "cursive";
-    font-size: 2.5rem;
-    line-height: 3.1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
 
 }
 
 #icons{
     display: flex;
-    gap: 7.04rem;
+    gap: 3rem;
 }
 
 .subT{
