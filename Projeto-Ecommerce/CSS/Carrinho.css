@@ -27,6 +27,17 @@ li{
     list-style: none;
 }
 
+span{
+    font-weight: bold;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
 #gray-bar{
     background-color: #535151;
     height: 5.0rem
@@ -161,7 +172,7 @@ main h2{
     width: 10.0rem;
     height: 3.5rem;
     text-align: center;
-    padding-left: 1.3rem;
+    
 }
 
 #quantityText button{
@@ -187,16 +198,139 @@ main h2{
     padding: 4.5rem 3.0rem;
 }
 
+#CEP{
+    border: 1px solid #CBCBCB;
+    border-radius: 1.0rem;
+    width: 20rem;
+    height: 3.5rem;
+    text-align: left;
+    margin-top: 2.0rem;
+    padding-left: 1.3rem;
+}
+
+#CEP-submit{
+    margin-left: 1.5rem;
+    width: 7rem;
+    height: 3.5rem;
+    border-radius: 1.0rem;
+    border: none;
+    cursor: pointer;
+    background-color: #F50057;
+    color: white;
+}
+
+#CEP-Options form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 2.0rem;
+
+
+    font-size: 1.5rem;
+    color: #535151;    
+
+}
+
+.option-wrapper{
+    position: relative;
+    background-color: #F6F6F6;
+    border-radius: 0.5rem;
+    width: 100%;
+    padding: 1.5rem 2.0rem;
+    margin-bottom: 0.5rem; 
+}
+
+.option-wrapper .option{
+    margin-right: 2.0rem;
+}
+
 #abstract{
+    display: flex;
+    flex-direction: column;
     background-color: white;
     width: 33rem;
     min-height: 37.8rem;
 
+    font-size: 1.5rem;
+
     border-radius: 1.0rem;
-    padding: 4.5rem 5.0rem;
+    padding: 4.5rem 3.0rem;
+
+    align-items: center;
 }
 
+#productAbstract{
+    margin-top: 5.0rem;
+}
 
+#productAbstract ul{
+    display: flex;
+    flex-direction: column;
+    min-height: 10rem;
+    justify-content: space-between;
+
+}
+
+#productAbstract ul li{
+    display: flex;
+    gap: 12rem;
+    justify-content: space-between;    
+}
+
+#totalContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.total-amount span{
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+
+#totalContainer a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #303132;
+    
+}
+
+.total-resume{
+    margin-top: 3.0rem;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    height: 10rem;
+    text-align: right;
+    align-items: center;
+    font-size: 1.5rem;
+    color:#535151
+}
+
+.submit-resume{
+    border: none;
+    background-color: #F50057;
+    color: white;
+    font-weight: bold;
+    padding: 1.6rem 10.0rem;
+    border-radius: 1.0rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+
+}
+
+.submit-resume:hover{
+    background-color: #d4004a;
+}
+#CEP-submit:hover{
+    background-color: #d4004a;
+}
+
+#totalContainer p{
+    text-align: center;
+}
 
 /*-------------------------FOOTER-----------------------*/
 footer{
