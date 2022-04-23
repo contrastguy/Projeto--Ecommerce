@@ -1,3 +1,269 @@
+/*-------------------------root-----------------------*/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
 body{
     background-color: #EFEFEF;
+    font-family: 'Bebas Neue', "cursive";
+    font-family: 'Montserrat', sans-serif
+    }
+
+/*-------------------------HEADER-----------------------*/
+
+header{
+    background-color: white;
+    height: 36.7rem;
+    text-align: center;
+}
+
+li{
+    list-style: none;
+}
+
+#gray-bar{
+    background-color: #535151;
+    height: 5.0rem
+}
+
+#logo-home{
+    margin-top: 3.2rem;
+    width: 51.3rem
+}
+
+#menu{
+    margin-top: 4.78rem;
+    display: flex;
+    justify-content: center;
+    gap: 13.0rem;
+}
+
+#menu a{
+    text-decoration: none;
+    color: #707070;
+    font-family: 'Bebas Neue', "cursive";
+    font-size: 2.5rem;
+    line-height: 3.1rem;
+
+}
+
+#icons{
+    display: flex;
+    gap: 7.04rem;
+}
+
+/*-------------------------MAIN-------------------------*/
+main{
+    display: flex;
+    justify-content: space-between;
+
+    margin: 5.0rem auto;
+    width: 125rem;
+
+}
+
+main h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.0rem;
+    font-weight: bold;
+}
+
+#main-wrapper1{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+
+#productText img{
+    width: 15.0rem;
+    height: 15.0rem;
+    object-fit: cover;
+    object-position: center -40px;
+}
+
+#myProducts{
+    background-color: white;
+    width: 90rem ;
+    padding: 4.5rem 3.0rem;
+
+    border-radius: 1.0rem;
+}
+
+#list-wrap{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #707070;
+}
+
+#list-wrap ul{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    align-items: center;
+    color: #535151;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-right: 5rem;
+    padding-bottom: 2.0rem;
+}
+
+#list-wrap ul li:first-child{
+    margin-right: 8.6rem;
+}
+
+#list-wrap ul li:nth-child(2){
+    margin-right: 3rem;
+}
+
+
+#productText{
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 3.5rem;
+    display: flex;
+    color: #535151;
+    font-size: 1.2rem;
+    font-weight: normal;
+    gap: 2rem;
+
+}
+
+
+#productText span{
+    font-weight: bold;
+}
+
+#descriptionText{
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+
+#quantityText form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.0rem;
+}
+
+#quantityText input{
+    border: 1px solid #CBCBCB;
+    border-radius: 1.0rem;
+    width: 10.0rem;
+    height: 3.5rem;
+    text-align: center;
+    padding-left: 1.3rem;
+}
+
+#quantityText button{
+    background-color: white;
+    color: #F50057;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#deliveryText{
+    width: 7rem;
+    text-align: center;
+}
+
+.oldPrice{
+    text-decoration: line-through;
+}
+
+#delivery{
+    background-color: white;
+    border-radius: 1.0rem;
+    padding: 4.5rem 3.0rem;
+}
+
+#abstract{
+    background-color: white;
+    width: 33rem;
+    min-height: 37.8rem;
+
+    border-radius: 1.0rem;
+    padding: 4.5rem 5.0rem;
+}
+
+
+
+/*-------------------------FOOTER-----------------------*/
+footer{
+    display:flex;
+    height: 41.5rem;
+    margin-top: 5rem;
+    padding: 8.5rem;
+
+    justify-content: center;
+    gap: 19.0rem;
+
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color:#303132;
+}
+
+#social h3,
+#subscription h3,
+#contact h3{
+    font-weight: bold;
+    font-size: 2.0rem;
+
+    margin-bottom: 4.5rem;
+}
+
+#social a img{
+    margin-right: 1.5rem
+}
+
+#subscription{
+    width: 46.0rem;
+    text-align: center;
+    font-size: 2.0rem;
+}
+
+#email{
+    width: 46.0rem;
+    height: 4.5rem;
+    background-color: #F50057; 
+    border: none;
+    margin-bottom: 1.0rem;
+
+}
+
+#email::placeholder{
+    color: white;
+    font-size: 2.0rem;
+    text-align: center;
+}
+
+#submit-email{
+    background-color: white;
+    width: 46.0rem;
+    height: 4.5rem;
+    border: none;
+    margin-bottom: 1.0rem;
+    color: #535151;
+
+    font-size: 2.0rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-bottom: 8.0rem
+}
+
+#contact p {
+    font-size: 2.0rem;
+    margin-bottom: 1.0rem;
 }

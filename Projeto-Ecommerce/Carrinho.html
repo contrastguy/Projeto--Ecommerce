@@ -15,126 +15,136 @@
   <div id="pageContainer">
     
     <header>
-        <div id="gray-bar"></div>
-        <a href="./Home.html">
-            <img src="./Images/Home/Logo.png" alt="Logo da OnlineShop">
-        </a>
+      <div id="gray-bar"></div>
+      <a href="./Home.html">
+          <img src="./IMAGENS/Home/Logo.png" id="logo-home" alt="Logo da OnlineShop">
+      </a>
 
-        <nav>
-            <a href="./Home.html">HOME</a> |
-            <a href="./GaleriaProdutos.html">COMPRAR</a> |
-            <a href="./Produtos.html">VENDER</a> |
-            <a href="./Home.html">CONTATO</a>
-
-            <a href="./Carrinho.html"><img src="./Images/Home/Carrinho de Compra.png" alt="Seu Carrinho de Compras"></a>
-            <a href="./PerfilUsuário.html"><img src="./Images/Home/PerfilUsuário.png" alt="Área de Perfil do Usuário / Login"></a>
-        </nav>
-    </header>
+      <nav id="menu">
+          <a href="./Home.html">HOME</a> 
+          <a href="./GaleriaProdutos.html">COMPRAR</a> 
+          <a href="./Produtos.html">VENDER</a> 
+          <a href="./Home.html">CONTATO</a>
+          <div id="icons">
+              <a href="./Carrinho.html"><img src="./IMAGENS/Home/Carrinho de Compra.png" alt="Seu Carrinho de Compras"></a>
+              <a href="./PerfilUsuário.html"><img src="./IMAGENS/Home/PerfilUsuário.png" alt="Área de Perfil do Usuário / Login"></a>
+          </div>    
+      </nav>
+  </header>
 
     <main>
-      <section id="myProducts">
-        <h2>Minha Cesta</h2>
-        <ul>
-          <li>Produto</li>
-          <li>Qtd.</li>
-          <li>Entrega</li>
-          <li>Preço</li>
-        </ul>
 
-        <div id="productText">
-          <a href="#">
-            <img
-            src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80"
-            alt="Miniatura da imagem do produto">
-          </a>
+      <div id="main-wrapper1">
+        <section id="myProducts">
+          <div id="list-wrap">
+            <h2>Minha Cesta</h2>
+            <ul>
+              <li>Produto</li>
+              <li>Qtd.</li>
+              <li>Entrega</li>
+              <li>Preço</li>
+            </ul>
+        </div>
+          <div id="productText">
+            <a href="#">
+              <img
+              src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80"
+              alt="Miniatura da imagem do produto">
+            </a>
+          
+            <div id="descriptionText">
+              <p class="productDescription"><span>Camiseta Adidas listras com frase</span></p>
+              <p class="productDescription"><span>Cor:</span> Branco</p>
+              <p class="productDescription"><span>Tamanho:</span> GG</p>
+            </div>
 
-          <div id="descriptionText">
-            <p class="productDescription"><span>Camiseta Adidas listras com frase</span></p>
-            <p class="productDescription"><span>Cor:</span> Branco</p>
-            <p class="productDescription"><span>Tamanho:</span> GG</p>
+            <div id="quantityText">
+              <form action="">
+                <input type="number" id="productQuantity" name="quantity" placeholder="1">
+                <button type="reset" value="cancel">remover</button>
+              </form>
+            </div> 
+
+            <div id="deliveryText">
+              <p>receba até <span>21 de Abril</span></p>
+            </div>
+
+            <div id="amountText">
+              <p class="oldPrice">R$ 100,00</p>
+              <span id="amount">R$ 69,90</span>
+              <p id="credit">em 1x no cartão</p>
+            </div>
+        
           </div>
 
-          <div id="quantityText">
+
+
+        </section>
+
+        <section id="delivery">
+          <div id="CEP-Container">
+            <h2>Cálculo de Frete</h2>
             <form action="">
-              <input type="number" id="productQuantity" name="quantity">
-              <button type="reset" value="cancel">remover</button>
+              <input type="number" id="CEP" name="CEP" placeholder="Insira seu CEP" >
+              <input type="submit" value="OK">
             </form>
-          </div> 
-
-          <div id="deliveryText">
-            <p>receba até 21 de Abril</p>
           </div>
+          <div id="CEP-Options">
+            <form action="">
+              <input type="radio" id="option" name="option" value="1">
+              <label for="option">Receba em até 10 dias úteis - Grátis </label>
 
-          <div id="amountText">
-            <p id="oldPrice">R$ 100,00</p>
-            <p id="amount">R$ 69,90</p>
-            <p id="credit">em 1x no cartão</p>
+              <input type="radio" id="option" name="option" value="2">
+              <label for="option">Receba em até 5 dias úteis - R$ 15,00</label>
+
+              <input type="radio" id="option" name="option" value="3">
+              <label for="option">Receba amanhã - R$ 25,00</label>
+            </form>
           </div>
+        </section>
+     </div>
 
-        </div>
-
-
-
-      </section>
-
-      <section id="delivery">
-        <div id="CEP-Container">
-          <h2>Cálculo de Frete</h2>
-          <form action="">
-            <input type="number" id="CEP" name="CEP" placeholder="Insira seu CEP" >
-            <input type="submit" value="OK">
-          </form>
-        </div>
-        <div id="CEP-Options">
-          <form action="">
-            <input type="radio" id="option" name="option" value="1">
-            <label for="option">Receba em até 10 dias úteis - Grátis </label>
-
-            <input type="radio" id="option" name="option" value="2">
-            <label for="option">Receba em até 5 dias úteis - R$ 15,00</label>
-
-            <input type="radio" id="option" name="option" value="3">
-            <label for="option">Receba amanhã - R$ 25,00</label>
-          </form>
-        </div>
-      </section>
-
+     <div id="main-wrapper2">
       <section id="abstract">
         <h2>Resumo do Pedido</h2>
-
+  
         <div id="productAbstract">
           <ul>
             <li><p class="abstract">1 Produto</p><p class="abstract">R$ 69,90</p></li>
             <li><span class="abstract">frete</span><span class="abstract">grátis</span></li>
           </ul>
         </div>
-
+  
         <div id="totalContainer">
           <h3>Total</h3>
           <h3 id="totalAmount">R$ 69.90</h3>
           <span>em 1x no cartão</span>
-
+  
           <button type="submit" value="Comprar">Comprar</button>
-
+  
           <p>adicionar mais produtos</p>
         </div>
       </section>
+     </div>
+
     </main>
+
+   
 
     <footer>
       <div id="social">
           <h3>NOS SIGA NAS REDES</h3>
-          <a href="#"><img src="./Images/Home/Facebook.png" alt="Logo do Facebook"></a>
-          <a href="#"><img src="./Images/Home/Twitter.png" alt="Logo do Instagram"></a>
-          <a href="#"><img src="./Images/Home/Youtube.png" alt="Logo do Youtube"></a>
-          <a href="#"><img src="./Images/Home/Instagram.png" alt="Logo do Instagram"></a>
+          <a href="#"><img src="./IMAGENS/Home/Facebook.png" alt="Logo do Facebook"></a>
+          <a href="#"><img src="./IMAGENS/Home/Twitter.png" alt="Logo do Instagram"></a>
+          <a href="#"><img src="./IMAGENS/Home/Youtube.png" alt="Logo do Youtube"></a>
+          <a href="#"><img src="./IMAGENS/Home/Instagram.png" alt="Logo do Instagram"></a>
       </div>
 
       <div id="subscription">
           <h3>RECEBA OFERTAS</h3>
           <form action="">
               <input type="email" id="email" name="email" placeholder="Coloque seu e-mail aqui!">
-              <input type="submit" value="SE INSCREVA">
+              <input type="submit" value="SE INSCREVA" id="submit-email">
           </form>
           <p>2022 by TERA</p>
       </div>
@@ -145,7 +155,7 @@
           <p>contato@contato.com</p>
 
       </div>
-    </footer>
+  </footer>
 
   </div>
   <script src="JS/Carrinho.js"></script>  
