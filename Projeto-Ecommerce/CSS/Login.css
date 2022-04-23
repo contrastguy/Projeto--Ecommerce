@@ -136,6 +136,11 @@ a{
     background-color: #033d77;
 }
 
+#roupa{
+    width: 50vw;
+    height: 125vh;
+}
+
 h1{
     text-align: left;
     font: normal normal normal 75px bolder Bebas Neue;

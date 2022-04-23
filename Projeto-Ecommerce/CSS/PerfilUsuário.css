@@ -76,6 +76,12 @@ main{
     border-radius: 50%;
 }
 
+#foto-perfil{
+    height: 17.5vh;
+    width: 17.5vh ;
+    border-radius: 50%; 
+}
+
 h4{
     font: normal normal bold 20px/40px Montserrat;
     letter-spacing: 0px;
