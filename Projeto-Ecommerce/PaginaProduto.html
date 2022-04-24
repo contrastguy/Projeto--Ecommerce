@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/GaleriaProdutos.css">
+    <link rel="stylesheet" href="CSS/PaginaProduto.css">
     <title>Galeria de produtos</title>
 </head>
 
@@ -20,12 +20,12 @@
             <!-- // -->
             <nav>
                 <ul>
-                    <li> Home </li>
-                    <li> Comprar</li>
-                    <li> Vender</li>
-                    <li> Contato</li>
-                    <li> <img src="IMAGENS/carrinho-de-compras.png" alt="Carrinho de compras"></li>
-                    <li><img src="IMAGENS/lar.png" alt=""></li>
+                    <li class="lista" ><a href="Home.html">Home</a></li>
+                    <li class="lista"> <a href="GaleriaProdutos.html">Comprar</a> </li>
+                    <li class="lista"> <a href="PaginaProduto.html">Vender</a> </li>
+                    <li class="lista"> <a href="Home.html">Contato</a> </li>
+                    <li class="lista"> <a href="Carrinho.html"><img src="IMAGENS/carrinho-de-compras.png" alt="Carrinho de compras"></a></li>
+                    <li class="lista"><a href="Home.html"><img src="IMAGENS/lar.png" alt=""></a></li>
                 </ul>
             </nav>
         </div>
@@ -40,7 +40,7 @@
                     <div class="float-filho"> <img src="" alt=""></div>
                 </div>
             </div>
-            <div id="img1"><img src="" alt=""></div>
+            <div id="img1"><img src="IMAGENS/Foto.png" alt="default"></div>
             <div id="caracteristicas">
                 <h3>PRODUTO 01</h3>
                 <h4>R$00,00</h4>
@@ -50,17 +50,17 @@
                 </div>
                 <div id="tamanho">
                     Tamanho
-                    <button>GG</button>
+                    <button class="botao" >GG</button>
                 </div>
                 <div id="quantidade">
                     Quantidade
-                    <button>2</button>
+                    <button class="botao">2</button>
                 </div>
                 <ul>
-                    <li> <button id="addcarrinho">Adicionar ao Carrinho</button></li>
-                    <li><button id="curtir"><img src="IMAGENS/coracao.png" alt="coração"></button></li>
+                    <li> <button id="addcarrinho" onclick="addcarrinho()" >Adicionar ao Carrinho</button></li>
+                    <li><button id="curtir" onclick="botaocurtir()"><img src="IMAGENS/coracao.png" alt="coração"></button></li>
                 </ul>
-                <button> <b>Comprar</b> </button>
+                <button id="comprar" onclick="comprar()"> <strong>Comprar</strong> </button>
             </div>
             <div id="descriçao">
                 <strong>Descrição do Produto</strong>
@@ -79,16 +79,16 @@
         <div class="conteudofooter">
             <div id="sigaredes">
                 <h4>NOS SIGA NAS REDES</h4>
-                <img src="IMAGENS/facebook.png" alt="logo-facebook">
-                <img src="IMAGENS/twitter.png" alt="logo-twitter">
-                <img src="IMAGENS/youtube.png" alt="logo-youtube">
-                <img src="IMAGENS/instagram.png" alt="logo-instagram">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="IMAGENS/facebook.png" alt="logo-facebook"></a> 
+                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"> <img src="IMAGENS/twitter.png" alt="logo-twitter"></a> 
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img src="IMAGENS/youtube.png" alt="logo-youtube"></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="IMAGENS/instagram.png" alt="logo-instagram"></a>
             </div>
 
             <div id="recebaofertas">
                 <h4>RECEBA OFERTAS</h4>
                 <input type="email" name="" placeholder="Coloque seu e-mail aqui!">
-                <button><strong>SE INSCREVA</strong></button>
+                <button id="inscrever" onclick="inscrever()" ><strong>SE INSCREVA</strong></button>
             </div>
 
             <div id="faleconosco">
@@ -101,7 +101,7 @@
         </div>
         2022 by TERA
     </footer>
-    <script src="JS/GaleriaProdutos.js"></script>
+    <script src="JS/PaginaProduto.js"></script>
 </body>
 
 </html>
