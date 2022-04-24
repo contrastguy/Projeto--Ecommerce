@@ -39,7 +39,17 @@ nav>ul>li {
     font-size: 25px;
     color: #707070;
     font-family: 'Bebas Neue', cursive;
+    text-decoration-line: none;
+   
 }
+
+a:-webkit-any-link {
+    color: #707070 ;
+    cursor: pointer;
+    text-decoration-line: none;
+}
+
+
 
 main {
     background-color: #EFEFEF;
@@ -93,6 +103,16 @@ main {
 
 }
 
+#caracteristicas>button:hover {
+    width: 356px;
+    height: 39px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 1;
+    font-family: Montserrat, Bold;
+    color: #F50057;
+}
+
 #caracteristicas>button>b {
     color: #FFFFFF
 }
@@ -107,10 +127,29 @@ main {
     font-family: Montserrat, Regular;
 }
 
+#addcarrinho:hover{
+    width: 305px;
+    height: 39px;
+    background: #F50057 0% 0% no-repeat padding-box;
+    border: 1px solid #6E6E6E;
+    border-radius: 10px;
+    opacity: 1;
+    font-family: Montserrat, Regular;
+    color:#FFFFFF;
+}
+
 #curtir {
     width: 44px;
     height: 39px;
     background: #F50057 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border-radius: 10px;
+}
+
+#curtir:hover{
+    width: 44px;
+    height: 39px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 1;
     border-radius: 10px;
 }
@@ -134,6 +173,18 @@ main {
     opacity: 1;
     font-family: Montserrat, Regular;
 }
+
+#tamanho>button:hover {
+    height: 35px;
+    margin-top: 15px;
+    background: #F50057 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    opacity: 1;
+    font-family: Montserrat, Regular;
+    color:#FFFFFF;
+}
+
 
 
 #cor {
@@ -173,6 +224,15 @@ main {
     border-radius: 10px;
     opacity: 1;
 }
+#quantidade>button:hover {
+    margin-top: 10px;
+    height: 40px;
+    background: #F50057 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    opacity: 1;
+    color:#FFFFFF
+}
 
 .conteudoPrincipal {
     position: relative;
@@ -188,6 +248,15 @@ main {
     top: 50%;
     left: 20%;
 }
+
+#img1>img{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 150px;
+    top: 150px;
+}
+
 
 #descriçao {
     position: absolute;
@@ -263,6 +332,11 @@ footer {
     width: 40px;
     padding: 5px;
 }
+#sigaredes>a>img {
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+}
 
 
 #recebaofertas {
@@ -304,6 +378,16 @@ footer {
     color: #535151;
 }
 
+#recebaofertas>button:hover{
+    width: 458px;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: #F50057;
+    font: normal normal bold 20px/24px Montserrat;
+    color: #FFFFFF;
+}
+
 
 #faleconosco {
 
@@ -312,3 +396,4 @@ footer {
     color: #FFFFFF;
     text-align: center;
 }
+
