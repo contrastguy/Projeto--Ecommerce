@@ -97,29 +97,46 @@ h4{
 .topicos{
     display: block;
     width: 25vw;
-    height: 45vh;
+    height: 54vh;
     background-color: #FFFFFF;
     border-radius: 10px;
     margin-left: 5vw;
+    padding-left: 0px; 
 }
 
-input{
-    width: 25vw;
+.lista{
+    display: flex;
+    align-items: center;
+    width: auto;
     height: 9vh;
     background-color: #FFFFFF;
-    border-radius: 10px;
-    border: none; 
-    text-align:start ;
-    padding-left:3vw;
+    border-radius: 10px;     
     font: normal normal normal 20px/40px Montserrat;
     letter-spacing: 0px;
     color: #535151;
     opacity: 1;
-    
+    list-style: none;
+    padding-left: 40px;    
+}
+
+
+.lista1{
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 9vh;
+    background-color: #F50057;
+    border-radius: 10px;     
+    font: normal normal normal 20px/40px Montserrat;
+    letter-spacing: 0px;
+    color: #535151;
+    opacity: 1;
+    list-style: none;
+    padding-left: 40px;    
 }
 
 #destaque{
-    width: 25vw;
+    width:auto;
     height: 9vh;
     background-color: #F50057 ;
     border-radius: 10px;
@@ -169,6 +186,10 @@ h2{
 
 .inputdireito{
     padding-left: 3vw;
+}
+
+input{
+    padding-left: 20px;
 }
 
 .txt{
@@ -277,7 +298,7 @@ p{
     text-align: center;
     width: 60%;
     height: 5vh;
-    margin-bottom: 1vh;
+    margin-bottom: 2vh;
     background: #F50057 0% 0% no-repeat padding-box ;
     opacity: 1;
     border: none;

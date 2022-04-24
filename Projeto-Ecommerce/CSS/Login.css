@@ -66,17 +66,18 @@ h2{
 }
 
 h4{
-    font: normal normal normal 22px/40px Montserrat;
+    font: normal normal normal 1.2em Montserrat;
     letter-spacing: 0px;
     color: #656565;
     opacity: 1; 
 }
 
 .texto{
-    font: normal normal normal 18px/40px Montserrat;
+    font: normal normal normal 18px Montserrat;
     letter-spacing: 0px;
     color: #656565;
     opacity: 1;
+    margin-top: 0;
 }
 
 input{
@@ -98,13 +99,16 @@ input{
     width: 80%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 5vh;
+    margin-top: 1vw;
 }
 
 #checkbox{
     margin-right: 1vw;
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
+    margin-top: 0;
 }
 
 a{
@@ -114,7 +118,7 @@ a{
     margin-left: 0.6vw;
 }
 
-.entrar{
+#entrar{
     width: 80%;
     height: 8.5vh;
     border: none;

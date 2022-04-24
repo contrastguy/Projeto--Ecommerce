@@ -36,13 +36,15 @@
                 </div>
                 <h4>Nome do Usuário</h4>
             </div>
-            <div class="topicos">
-                <input type="button" value="Meus Pedidos">
-                <input type="button" value="Meu Endereço">
-                <input type="button" value="Lista de Favoritos">
-                <input type="button" value="Minhas Compras">
-                <input type="button" value="Minhas Vendas">
-                <input type="button" value="Minha Conta" id="destaque">
+            <div>
+                <ul class="topicos">
+                    <li class="lista">Meus Pedidos</li>
+                    <li class="lista">Meu Endereço</li>
+                    <li class="lista">Lista de Favoritos</li>
+                    <li class="lista">Minhas Compras</li>
+                    <li class="lista">Minhas Vendas</li>
+                    <li id="destaque" class="lista1">Minha Conta</li>
+                </ul>
             </div>
         </div>
         <div class="informacao">
@@ -94,6 +96,27 @@
             <p>contato@contato.com</p>
         </div>
     </footer>
-    <script src="JS/PerfilUsuário.js"></script>
+    <script>    
+//         const i = [0,1,2,3,4]
+        
+//         let e = Number(i.values)
+//         console.log(e)
+
+        var a = document.getElementsByClassName('lista')[0 || 1]
+        // a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        
+
+        function entrar(){
+        // a.innerText = 'Entrou'
+        a.style.background = 'yellow'
+}
+
+        function sair(){
+        // a.innerText = 'Saiu'
+        a.style.background = 'green'
+}
+    </script>
 </body>
 </html>
