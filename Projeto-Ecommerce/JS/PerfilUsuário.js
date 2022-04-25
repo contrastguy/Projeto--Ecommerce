@@ -1,5 +1,3 @@
-console.log("Estou funcionando!");
-
 let listas = document.getElementsByClassName('lista')
 
 for (let i = 0; i < listas.length; i++) {

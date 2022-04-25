@@ -1,17 +1,3 @@
-console.log("Estou funcionando!");
-
-// var a = document.querySelector('a')
-// a.addEventListener('mouseenter', entrar)
-// a.addEventListener('mouseout', sair)
-
-// function entrar(){
-//      a.style.color = 'yellow'
-// }
-
-// function sair(){
-//      a.style.color = 'green'
-// }
-
 function validar(){
 
     let email = document.getElementById('email')
