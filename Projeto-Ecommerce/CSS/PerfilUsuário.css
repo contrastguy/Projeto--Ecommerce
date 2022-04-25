@@ -119,30 +119,34 @@ h4{
     padding-left: 40px;    
 }
 
-
-.lista1{
+.destaque{    
     display: flex;
     align-items: center;
-    width: auto;
-    height: 9vh;
-    background-color: #F50057;
-    border-radius: 10px;     
-    font: normal normal normal 20px/40px Montserrat;
-    letter-spacing: 0px;
-    color: #535151;
-    opacity: 1;
-    list-style: none;
-    padding-left: 40px;    
-}
-
-#destaque{
     width:auto;
     height: 9vh;
     background-color: #F50057 ;
     border-radius: 10px;
+    font: normal normal normal 20px/40px Montserrat;
+    letter-spacing: 0px;
     border: none;
     color: #FFFFFF;
     opacity: 1;
+    padding-left: 40px; 
+}
+
+#destaque{    
+    display: flex;
+    align-items: center;
+    width:auto;
+    height: 9vh;
+    background-color: #F50057 ;
+    border-radius: 10px;
+    font: normal normal normal 20px/40px Montserrat;
+    letter-spacing: 0px;
+    border: none;
+    color: #FFFFFF;
+    opacity: 1;
+    padding-left: 40px; 
 }
 
 .informacao{

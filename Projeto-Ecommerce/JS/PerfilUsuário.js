@@ -1,15 +1,18 @@
 console.log("Estou funcionando!");
 
-let mudanca = document.getElementsByTagName('li')
+let listas = document.getElementsByClassName('lista')
 
-function entrar(){
-    console.log(mudanca)
-    mudanca
+for (let i = 0; i < listas.length; i++) {
+    listas[i].addEventListener("mouseover", function () {
+        this.classList.add("destaque")
+    })
+
+listas[i].addEventListener("mouseleave", function () {
+    this.classList.remove("destaque")
+})
 }
 
-function sair(){
-    console.log(mudanca)
-}
+
 
 
 
