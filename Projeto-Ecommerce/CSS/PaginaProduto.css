@@ -40,11 +40,11 @@ nav>ul>li {
     color: #707070;
     font-family: 'Bebas Neue', cursive;
     text-decoration-line: none;
-   
+
 }
 
 a:-webkit-any-link {
-    color: #707070 ;
+    color: #707070;
     cursor: pointer;
     text-decoration-line: none;
 }
@@ -127,7 +127,7 @@ main {
     font-family: "Montserrat", Regular;
 }
 
-#addcarrinho:hover{
+#addcarrinho:hover {
     width: 305px;
     height: 39px;
     background: #F50057 0% 0% no-repeat padding-box;
@@ -135,7 +135,7 @@ main {
     border-radius: 10px;
     opacity: 1;
     font-family: "Montserrat", Regular;
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
 
 #curtir {
@@ -146,7 +146,7 @@ main {
     border-radius: 10px;
 }
 
-#curtir:hover{
+#curtir:hover {
     width: 44px;
     height: 39px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -181,8 +181,8 @@ main {
     border: 1px solid #707070;
     border-radius: 10px;
     opacity: 1;
-    font-family:"Montserrat", Regular;
-    color:#FFFFFF;
+    font-family: "Montserrat", Regular;
+    color: #FFFFFF;
 }
 
 
@@ -224,6 +224,7 @@ main {
     border-radius: 10px;
     opacity: 1;
 }
+
 #quantidade>button:hover {
     margin-top: 10px;
     height: 40px;
@@ -231,7 +232,7 @@ main {
     border: 1px solid #707070;
     border-radius: 10px;
     opacity: 1;
-    color:#FFFFFF
+    color: #FFFFFF
 }
 
 .conteudoPrincipal {
@@ -249,7 +250,7 @@ main {
     left: 20%;
 }
 
-#img1>img{
+#img1>img {
     width: 500px;
     height: 500px;
     position: relative;
@@ -321,7 +322,7 @@ footer {
 #sigaredes {
 
     font-size: 20px;
-    font-family:"Montserrat", Regular;
+    font-family: "Montserrat", Regular;
     color: #FFFFFF;
     text-align: center;
     padding-left: 10px;
@@ -332,6 +333,7 @@ footer {
     width: 40px;
     padding: 5px;
 }
+
 #sigaredes>a>img {
     height: 40px;
     width: 40px;
@@ -378,7 +380,7 @@ footer {
     color: #535151;
 }
 
-#recebaofertas>button:hover{
+#recebaofertas>button:hover {
     width: 458px;
     height: 40px;
     padding-top: 5px;
@@ -397,3 +399,44 @@ footer {
     text-align: center;
 }
 
+@media (max-width:1440px) {
+    #linhainício {
+        width: 105%;
+    }
+
+    #head {
+        width: 105%;
+    }
+
+    main {
+        width: 105%;
+    }
+
+    #img1 {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+    }
+
+    #imagens {
+        position: absolute;
+        bottom: 285px;
+        left: 14.5%;
+    }
+
+    #características {
+        position: absolute;
+        top: 50%;
+        left: 60%;
+    }
+
+    #descriçao {
+        position: absolute;
+        bottom: 50px;
+        left: 23%;
+    }
+
+    footer{
+        width: 105%;
+    }
+}
