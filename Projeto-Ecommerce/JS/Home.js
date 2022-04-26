@@ -3,57 +3,57 @@
 const dataBase = [
     {
         id: 1,
-        product: "Camisa Teste",
-        amount: 59.90,
+        name: "Camisa 1",
+        price: 59.90,
         type: "summer"
 
     },
     {
         id: 2,
-        product: "Calça Teste 2",
-        amount: 199.90,
+        name: "Camisa 2",
+        price: 49.90,
         type: "winter"
         
     },
     {
         id: 3,
-        product: "Camisa Teste",
-        amount: 59.90,
+        name: "Camisa 3",
+        price: 35.90,
         type: "summer"
 
     },
     {
         id: 4,
-        product: "Camisa Teste",
-        amount: 59.90,
+        name: "Camisa 4",
+        price: 59.90,
         type: "summer"
 
     },
     {
         id: 5,
-        product: "Camisa Teste",
-        amount: 59.90,
+        name: "Camisa 5",
+        price: 29.90,
         type: "summer"
 
     },
     {
         id: 6,
-        product: "Camisa Teste",
-        amount: 59.90,
+        name: "Camisa 6",
+        price: 49.90,
         type: "summer"
 
     },
     {
         id: 7,
-        product: "Camisa Teste",
-        amount: 59.90,
+        name: "Camisa 7",
+        price: 19.90,
         type: "summer"
 
     },
     {
         id: 8,
-        product: "Camisa Teste",
-        amount: 59.90,
+        name: "Camisa 8",
+        price: 50.90,
         type: "summer"
 
     },
@@ -73,11 +73,11 @@ console.log(summer)
 const cards = {
     addCards(dataBase){
         for(let i = 0; i < dataBase.length; i++){
-            cards.filter(dataBase)
+            cards.filter(dataBase, i)
         }
     },
 
-    filter (dataBase) {
+    filter (dataBase, index) {
         let ul = document.querySelector("#cardsContainer ul")
         let li = document.createElement("li")
         li.innerHTML = ` 
@@ -86,7 +86,7 @@ const cards = {
                     <img
                     src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80"
                     class="product-image"
-                    alt="Imagem do Produto"> <div class="price-tag"><h3>R$ 88,88 - Produto 1</h3></div> 
+                    alt="Imagem do Produto"> <div class="price-tag"><h3>R$ ${dataBase[index].price.toFixed(2)} - ${dataBase[index].name}</h3></div> 
                 </a>
             </div>`
         ul.appendChild(li)

@@ -146,7 +146,7 @@ input:focus{
 }
 
 #cardsContainer{
-    width: 140rem;
+    width: 125rem;
     margin: auto;
     
 }
@@ -165,8 +165,8 @@ a{
 }
 
 .product-image{
-    width: 35rem;
-    height: 50rem;
+    width: 30rem;
+    height: 40rem;
     object-fit: cover;
     object-position: 0 0;
 
@@ -225,7 +225,7 @@ footer{
     padding: 8.5rem;
 
     justify-content: center;
-    gap: 19.0rem;
+    gap: 13.2rem;
 
     font-family: 'Montserrat', sans-serif;
     color: white;
