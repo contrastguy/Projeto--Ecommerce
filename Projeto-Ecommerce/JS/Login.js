@@ -11,4 +11,7 @@ function validar(){
         alert('[Error] E-mail ou senha inválidos')
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> LucasFreitas

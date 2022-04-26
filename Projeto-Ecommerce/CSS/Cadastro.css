@@ -3,6 +3,10 @@ body{
     height: 100vh;
     background: #EFEFEF 0% 0% no-repeat padding-box;
     opacity: 1;
+<<<<<<< HEAD
+=======
+    
+>>>>>>> LucasFreitas
 }
 
 header{
@@ -226,4 +230,8 @@ p{
 
 .falec{
     color: #FFFFFF; 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> LucasFreitas
