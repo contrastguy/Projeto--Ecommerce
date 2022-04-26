@@ -81,7 +81,7 @@ main {
     padding: 0;
     display: flex;
     align-items: center;
-    font-family: Montserrat, Regular;
+    font-family: "Montserrat", Regular;
 }
 
 
@@ -99,7 +99,7 @@ main {
     background: #F50057 0% 0% no-repeat padding-box;
     border-radius: 10px;
     opacity: 1;
-    font-family: Montserrat, Bold;
+    font-family: "Montserrat", Bold;
 
 }
 
@@ -109,7 +109,7 @@ main {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 10px;
     opacity: 1;
-    font-family: Montserrat, Bold;
+    font-family: "Montserrat", Bold;
     color: #F50057;
 }
 
@@ -124,7 +124,7 @@ main {
     border: 1px solid #6E6E6E;
     border-radius: 10px;
     opacity: 1;
-    font-family: Montserrat, Regular;
+    font-family: "Montserrat", Regular;
 }
 
 #addcarrinho:hover{
@@ -134,7 +134,7 @@ main {
     border: 1px solid #6E6E6E;
     border-radius: 10px;
     opacity: 1;
-    font-family: Montserrat, Regular;
+    font-family: "Montserrat", Regular;
     color:#FFFFFF;
 }
 
@@ -158,7 +158,7 @@ main {
     width: 100px;
     display: flex;
     flex-direction: column;
-    font-family: Montserrat, Regular;
+    font-family: "Montserrat", Regular;
     font-size: 15px;
     border: 5px;
 
@@ -171,7 +171,7 @@ main {
     border: 1px solid #707070;
     border-radius: 10px;
     opacity: 1;
-    font-family: Montserrat, Regular;
+    font-family: "Montserrat", Regular;
 }
 
 #tamanho>button:hover {
@@ -181,7 +181,7 @@ main {
     border: 1px solid #707070;
     border-radius: 10px;
     opacity: 1;
-    font-family: Montserrat, Regular;
+    font-family:"Montserrat", Regular;
     color:#FFFFFF;
 }
 
@@ -192,7 +192,7 @@ main {
     height: 55px;
     display: flex;
     flex-direction: column;
-    font-family: Montserrat, Regular;
+    font-family: "Montserrat", Regular;
     font-size: 15px;
     border: 5px;
 
@@ -200,7 +200,7 @@ main {
 
 #cor>button {
     margin-top: 15px;
-    font-family: Montserrat, Regular;
+    font-family: """Montserrat"", Regular;
 }
 
 #quantidade {
@@ -208,7 +208,7 @@ main {
     height: 55px;
     display: flex;
     flex-direction: column;
-    font-family: Montserrat, Regular;
+    font-family: "Montserrat", Regular;
     font-size: 15px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -264,14 +264,14 @@ main {
     left: 20%;
     width: 50vw;
     color: #6E6E6E;
-    font-family: Montserrat, Bold;
+    font-family: "Montserrat"", Bold;
 }
 
 #txtdescriçao {
     width: 813px;
     height: 57px;
     padding-top: 20px;
-    font: normal normal normal 15px/19px Montserrat;
+    font: normal normal normal 15px/19px "Montserrat";
     letter-spacing: 0px;
     color: #6E6E6E;
     opacity: 1;
@@ -304,7 +304,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font: normal normal normal 20px/24px Montserrat;
+    font: normal normal normal 20px/24px "Montserrat";
     letter-spacing: 0px;
     color: #FFFFFF;
 }
@@ -321,7 +321,7 @@ footer {
 #sigaredes {
 
     font-size: 20px;
-    font-family: Montserrat, Regular;
+    font-family:"Montserrat", Regular;
     color: #FFFFFF;
     text-align: center;
     padding-left: 10px;
@@ -342,7 +342,7 @@ footer {
 #recebaofertas {
     margin: 125px;
     font-size: 20px;
-    font-family: Montserrat, Regular;
+    font-family: "Montserrat"", Regular;
     color: #FFFFFF;
     text-align: center;
     display: flex;
@@ -356,7 +356,7 @@ footer {
     width: 450px;
     height: 30px;
     background-color: #F50057;
-    font-family: Montserrat, Regular;
+    font-family: "Montserrat", Regular;
     font-size: 20px;
     color: #FFFFFF;
 }
@@ -374,7 +374,7 @@ footer {
     padding-top: 5px;
     margin-top: 5px;
     background-color: #FFFFFF;
-    font: normal normal bold 20px/24px Montserrat;
+    font: normal normal bold 20px/24px "Montserrat";
     color: #535151;
 }
 
@@ -384,7 +384,7 @@ footer {
     padding-top: 5px;
     margin-top: 5px;
     background-color: #F50057;
-    font: normal normal bold 20px/24px Montserrat;
+    font: normal normal bold 20px/24px "Montserrat";
     color: #FFFFFF;
 }
 
@@ -392,7 +392,7 @@ footer {
 #faleconosco {
 
     font-size: 20px;
-    font-family: Montserrat, Regular;
+    font-family: "Montserrat", Regular;
     color: #FFFFFF;
     text-align: center;
 }
