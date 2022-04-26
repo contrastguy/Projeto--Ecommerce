@@ -5,9 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/Cadastro.css">
-    <title>Document</title>
+    <title>Cadastro</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+            <div id="gray-bar"></div>
+            <a href="./Home.html">
+                <img src="./IMAGENS/Logo.png" id="logo-home" alt="Logo da OnlineShop">
+            </a>
+
+            <nav id="menu">
+                <a href="./Home.html">HOME</a> 
+                <a href="./GaleriaProdutos.html">COMPRAR</a> 
+                <a href="./Produtos.html">VENDER</a> 
+                <a href="./Home.html">CONTATO</a>
+                <div id="icons">
+                    <a href="./Carrinho.html"><img src="./IMAGENS/Carrinho de Compra.png" alt="Seu Carrinho de Compras"></a>
+                    <a href="./PerfilUsuário.html"><img src="./IMAGENS/PerfilUsuário.png" alt="Área de Perfil do Usuário / Login"></a>
+                </div>    
+            </nav>
+    </header>
+        <div class="subT">
+            <h2>FAÇA SEU CADASTRO!</h2>
+        </div>
+    <main>
+        <div class="cadaesquerdo">
+            <ul>
+                <li><input type="text" id="name" value="Nome"></li>
+                <li><input type="text" id="email" value="E-mail"></li>
+                <li><input type="password" name="pass" id="pass" value="Senha"></li>
+                <li><input type="text" id="doc" value="CPF"></li>
+            </ul>
+        </div>
+        <div class="cadadireito">
+            <ul>
+                <li><input type="text" id="sobrenome" value="Sobrenome"></li>
+                <li><input type="text" id="confiemail" value="Confirmação de E-mail"></li>
+                <li><input type="password" name="conpass" id="copass" value="Confirmação de Senha"></li>
+                <li><div class="termos">
+                        <input type="checkbox" name="" id="box">
+                        <h4>Concordo com os <a href="./termos.html" target="_blank">termos presentes</a> no regulamento desta página.</h4>
+                    </div></li>
+            </ul>
+        </div>
+    </main>
+    <div class="check">
+        <input type="button" value="Salvar" id="save">
+    </div>
+    <footer>
+        <div class="divesquerda">
+            <h3>NOS SIGA NAS REDES</h3>
+            <a href="https://www.facebook.com" target="_blank"><img src="./imagens/facebook.png" alt="faceicon" srcset="icone do facebook" class="imagem"></a>
+            <a href="https://www.twiter.com" target="_blank"><img src="./imagens/twitter.png" alt="twitericon" srcset="icone do twiter" class="imagem"></a>
+            <a href="https://www.youtube.com" target="_blank"><img src="./imagens/youtube.png" alt="youtuicon" srcset="icone do youtube" class="imagem"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="./imagens/instagram.png" alt="instaicon" srcset="icone do instagram" class="imagem"></a>            
+        </div>
+        <div class="divmeio">
+            <h3>RECEBA OFERTAS</h3>
+            <input type="text" id="emailmeio" value="Coloque seu E-mail aqui">
+            <input type="button" value="SE INSCREVA" id="botaoins">
+            <p>2022 by TERA</p>
+        </div>
+        <div class="divdireita">
+            <h3>FALE CONOSCO</h3>
+            <p>(XX)XXXXX-XXXX</p>
+            <p>contato@contato.com</p>
+        </div>
+    </footer>
     <script src="JS/Cadastro.js"></script>
 </body>
 </html>
