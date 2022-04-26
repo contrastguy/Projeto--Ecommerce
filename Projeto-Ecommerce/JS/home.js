@@ -1,6 +1,3 @@
-<<<<<<< HEAD:Projeto-Ecommerce/JS/home.js
-console.log("Estou funcionando!");
-=======
 
 
 const dataBase = [
@@ -100,4 +97,3 @@ const cards = {
 }
 
 cards.addCards(dataBase)
->>>>>>> LucasFreitas:Projeto-Ecommerce/JS/Home.js

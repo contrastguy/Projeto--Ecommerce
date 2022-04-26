@@ -9,15 +9,3 @@ listas[i].addEventListener("mouseleave", function () {
     this.classList.remove("destaque")
 })
 }
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-
-=======
->>>>>>> LucasFreitas
