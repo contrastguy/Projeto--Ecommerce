@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="CSS/PaginaProduto-BS.css">
+    <title>Galeria de produtos</title>
+</head>
+
+<body>
+    <!-- header/Navbar  início -->
+    <header>
+        <div class="container-fluid" style="height:3vh;background-color:#535151"></div>
+
+
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid" style="display:flex;flex-direction:column">
+                <a class="navbar-brand" href="#"><img src="IMAGENS/Logo.png" alt="Logo do site"></a>
+                <button class="navbar-toggler position-relative" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav" style="display:flex;flex-direction: row;">
+                        <li class="nav-item me-5 mt-3 fs-3 ">
+                            <a class="nav-link active " aria-current="page" href="#"
+                                style="font-family: 'Bebas Neue', cursive;">Home</a>
+                        </li>
+                        <li class="nav-item me-5 mt-3 fs-3">
+                            <a class="nav-link active" href="#" style="font-family: 'Bebas Neue', cursive;">Comprar</a>
+                        </li>
+                        <li class="nav-item me-5 mt-3 fs-3">
+                            <a class="nav-link active" href="#" style="font-family: 'Bebas Neue', cursive;">Vender</a>
+                        </li>
+                        <li class="nav-item me-5 mt-3 fs-3">
+                            <a class="nav-link active" style="font-family: 'Bebas Neue', cursive;">Contato</a>
+                        </li>
+                        <li class="nav-item me-5 mt-2 ms-4 fs-3">
+                            <a class="nav-link active"><img src="Imagens/carrinho-de-compras.png"
+                                    alt="ícone de um carrinho de compras"></a>
+                        </li>
+                        <li class="nav-item me-5 mt-2 fs-3">
+                            <a class="nav-link active"><img src="Imagens/lar.png" alt="ícone de uma casa"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- header/Navbar fim -->
+
+    <!-- main início -->
+    <main>
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <div class="container" style="height:500px;width:500px ;background-color:#6e6e6e"><img src="IMAGENS/Foto.png" alt="" style="width:200px;position:relative;top:130px;left:130px"></div>
+                <div class="container" style="width:45px;height:45px;background-color: #6e6e6e; position: relative; right: 193px; top:35px"></div>
+                <div class="container" style="width:45px;height:45px;background-color: #6e6e6e; position: relative; right: 135px; bottom:10px"></div>
+                <div class="container" style="width:45px;height:45px;background-color: #6e6e6e; position: relative; right: 80px; bottom:55px"></div>
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3">Produto 01</h1>
+                <h2 class="fw-bold lh-1 mb-5">R$88,88</h2>
+                <p class="lead">Cor: Branco</p>
+                <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input">
+                <p class="lead ">Tamanho</p>
+                <button type="button" class="btn btn-outline-secondary" style="padding-right:80px;"> <span style="position:relative;left:33px">GG</span> </button>
+                <p class="lead mt-4">Quantidade</p>
+                <button type="button" class="btn btn-outline-secondary" style="padding-right:80px;"> <span style="position:relative;left:33px">2</span> </button>
+
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-3">
+                  <button type="button" class="btn btn-outline-secondary btn-lg px-4 me-md-2" >Adicionar ao carrinho</button>
+                  <button type="button" class="btn btn-outline-secondary btn-lg px-4" style="background-color:#F50057"><img src="IMAGENS/coracao.png" alt=""></button>
+                </div>
+                <button type="button" class="btn btn-outline-secondary btn-lg me-md-2 mt-4" style="background-color:#F50057;color:white;padding-right:240px; "> <span style="position:relative;left:105px">Comprar</span> </button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="container-md mb-5">
+              <h4>Descrição do produto</h4>
+              <div class="container" >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
+          </div>
+    </main>
+    <!-- main fim -->
+
+    <!-- footer início -->
+    <footer>
+        <div class="container-fluid" style="background-color:#303132; height:40vh">
+            <div class="container">
+                <footer class="py-5" >
+                  <div id="container-footer" class=" container-fluid " >
+                    <div class="col-6 col-md-2 mb-3">
+                        
+                        <h5 id="h5-footer">NOS SIGA NAS REDES</h5>
+                        <ul id="lista-midia" class="nav col-md-4 justify-content-end list-unstyled ">
+                            <li id="img-midia" class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><img src="Imagens/facebook.png" alt=""></svg></a></li>
+                            <li id="img-midia" class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><img src="Imagens/twitter.png" alt="" style="width: 40px;"></svg></a></li>
+                            <li id="img-midia" class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><img src="Imagens/youtube.png" alt=""></svg></a></li>
+                            <li id="img-midia" class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><img src="Imagens/instagram.png" alt=""></svg></a></li>
+                          </ul>
+                      </div>
+
+
+                   
+                    
+              
+                    <div class="col-md-5 offset-md-1 mb-3">
+                      <form>
+                      
+                        <div class="d-flex flex-column  w-100 gap-2">
+                          <label for="newsletter1" class="visually-hidden">Email address</label>
+                          <input id="newsletter1" type="text" class="form-control" placeholder="Coloque seu Email aqui">
+                          <button class="btn btn-outline-secondary" type="button" style="background-color:#F50057;color: white;">Inscreva-se</button>
+                        </div>
+                      </form>
+                    </div>
+
+                    <div id="container-fale-conosco" class="container">
+                        <h5 class="fw-bold">FALE CONOSCO</h5>
+                       (XX) XXXX-XXXX
+                       contato@contato.com
+                      </div>
+
+                  </div>
+              
+                  
+
+                  
+                    <p id="Copyright">© 2022 By Tera</p>
+                  </div>
+                </footer>
+              </div>
+
+        </div>
+
+    </footer>
+    <!-- footer fim -->
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+<script src="JS/PaginaProduto-BS.js"></script>
+
+</html>
