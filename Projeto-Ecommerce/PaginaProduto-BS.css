@@ -4,26 +4,11 @@
     width: 50vw
 }
 
-.float-pai {
-    width: 140px;
+div.container.sub-imagem{
+    position:absolute;
 }
 
-.float-filho {
-    /* deixar todos os três quadrados menores , usando o float */
-    width: 25%;
-    float: left;
-    background-color: #6E6E6E;
-    height: 35px;
-    margin-left: 10px;
-}
 
-#img1 {
-    
-    background: #6E6E6E;
-    transform: translateY(-70%);
-    position: relative;
-    top:450px;
-}
 
 #lista-midia{
     display: flex;
@@ -41,6 +26,9 @@
     color:white;
 }
 
+#Midias{
+    flex-direction: row !important;
+}
 
 #container-fale-conosco{
     width:200px;

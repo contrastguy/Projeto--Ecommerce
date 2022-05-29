@@ -61,10 +61,13 @@
         <div class="container col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
               <div class="col-10 col-sm-8 col-lg-6">
-                <div class="container" style="height:500px;width:500px ;background-color:#6e6e6e"><img src="IMAGENS/Foto.png" alt="" style="width:200px;position:relative;top:130px;left:130px"></div>
-                <div class="container" style="width:45px;height:45px;background-color: #6e6e6e; position: relative; right: 193px; top:35px"></div>
-                <div class="container" style="width:45px;height:45px;background-color: #6e6e6e; position: relative; right: 135px; bottom:10px"></div>
-                <div class="container" style="width:45px;height:45px;background-color: #6e6e6e; position: relative; right: 80px; bottom:55px"></div>
+                <div class="container imagem" style="height:500px;width:500px ;background-color:#6e6e6e"><img src="IMAGENS/Foto.png" alt="" style="width:200px;position:relative;top:130px;left:130px"></div>
+                
+                <div class="container sub-imagem">
+                <div class="container" style="width:45px;height:45px;background-color: #6e6e6e;"></div>
+                <div class="container" style="width:45px;height:45px;background-color: #6e6e6e;"></div>
+                <div class="container" style="width:45px;height:45px;background-color: #6e6e6e;"></div>
+                </div>
               </div>
               <div class="col-lg-6">
                 <h1 class="display-5 fw-bold lh-1 mb-3">Produto 01</h1>
@@ -97,56 +100,66 @@
     <!-- main fim -->
 
     <!-- footer início -->
-    <footer>
-        <div class="container-fluid" style="background-color:#303132; height:40vh">
-            <div class="container">
-                <footer class="py-5" >
-                  <div id="container-footer" class=" container-fluid " >
-                    <div class="col-6 col-md-2 mb-3">
-                        
-                        <h5 id="h5-footer">NOS SIGA NAS REDES</h5>
-                        <ul id="lista-midia" class="nav col-md-4 justify-content-end list-unstyled ">
-                            <li id="img-midia" class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><img src="Imagens/facebook.png" alt=""></svg></a></li>
-                            <li id="img-midia" class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><img src="Imagens/twitter.png" alt="" style="width: 40px;"></svg></a></li>
-                            <li id="img-midia" class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><img src="Imagens/youtube.png" alt=""></svg></a></li>
-                            <li id="img-midia" class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><img src="Imagens/instagram.png" alt=""></svg></a></li>
-                          </ul>
-                      </div>
+    <div class="container">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Section</h5>
+              <ul id="Midias" class="nav justify-content-end list-unstyled  d-flex-">
+                <li class="nav-item ms-2"><a href="#" class="nav-link p-0 text-muted"><img src="Imagens/facebook.png" class="container col-3 col-md-5 col-lg-5" alt="Logo do facebook"></a></li>
+                <li class="nav-item ms-2"><a href="#" class="nav-link p-0 text-muted"><img src="IMAGENS/twitter.png" class="container col-3 col-md-5 col-lg-5" alt="Logo do twitter"></a></li>
+                <li class="nav-item ms-2"><a href="#" class="nav-link p-0 text-muted"><img src="IMAGENS/instagram.png" class="container col-3 col-md-5 col-lg-5" alt="Logo do instagram"></a></li>
+                <li class="nav-item ms-2"><a href="#" class="nav-link p-0 text-muted"><img src="IMAGENS/youtube.png" class="container col-3 col-md-5 col-lg-5" alt="Logo do youtube"></a></li>
+                
+            
+              </ul>
+            </div>
+      
+           
+      
 
-
-                   
-                    
-              
-                    <div class="col-md-5 offset-md-1 mb-3">
-                      <form>
-                      
-                        <div class="d-flex flex-column  w-100 gap-2">
-                          <label for="newsletter1" class="visually-hidden">Email address</label>
-                          <input id="newsletter1" type="text" class="form-control" placeholder="Coloque seu Email aqui">
-                          <button class="btn btn-outline-secondary" type="button" style="background-color:#F50057;color: white;">Inscreva-se</button>
-                        </div>
-                      </form>
-                    </div>
-
-                    <div id="container-fale-conosco" class="container">
-                        <h5 class="fw-bold">FALE CONOSCO</h5>
-                       (XX) XXXX-XXXX
-                       contato@contato.com
-                      </div>
-
+            
+            <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                  <h5>Subscribe to our newsletter</h5>
+                  <p>Monthly digest of what's new and exciting from us.</p>
+                  <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                    <button class="btn btn-primary" type="button">Subscribe</button>
                   </div>
-              
-                  
-
-                  
-                    <p id="Copyright">© 2022 By Tera</p>
-                  </div>
-                </footer>
+                </form>
               </div>
 
-        </div>
+              
 
-    </footer>
+
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+      
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>© 2022 Company, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+
+
+
     <!-- footer fim -->
 
 
