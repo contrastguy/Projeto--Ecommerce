@@ -6,14 +6,17 @@ const routes = express.Router()
 //pega todos os usuários
 routes.get("/getall",Controllerfunctions.getAll)
 
+//pega um usuário em específico
+routes.get("/user/:id",Controllerfunctions.getById)
+
 //criar um novo usuário
 routes.post("/create",Controllerfunctions.createUser)
 
 //atualiza um novo usuário
-routes.put("/update",Controllerfunctions.updateUser)
+routes.put("/update/:id",Controllerfunctions.updateUser)
 
 //deleta um novo usuário
-routes.delete("/delete",Controllerfunctions.deleteUser)
+routes.delete("/delete/:id",Controllerfunctions.deleteUser)
 
 
 
