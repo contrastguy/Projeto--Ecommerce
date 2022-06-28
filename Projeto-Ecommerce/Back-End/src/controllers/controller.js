@@ -4,24 +4,18 @@ import mongoose from "mongoose";
 
 
 class Controllerfunctions {
-  static getAll = async (req, res) => {
+
+
+  static start = (req,res) => {
+    res.status(200).send({"Message":"Olá , seja bem vindo!"})
+  }
+
+  static getAll = (req, res) => {
     try {
-
-      const { name, email, password } = req.body
-
-      const possibleUser = await User.find({ name, email, password }).populate("User")
-      //a condição do if é True , já esta como padrão
-      if (possibleUser) {
-
-        return res.status(200).send([{ error: "Usuário já cadastrado" }, { possibleUser }])
-      }
-      //else
-      const newuser = await User.create(req.body)
-      User.password = undefined;
-      return res.status(200).send({ newuser })
+      res.send([User])
 
     } catch (error) {
-
+      console.log(error)
       res.status(400).send({ error: "Erro com a lógica da função" })
     }
 
@@ -30,11 +24,9 @@ class Controllerfunctions {
 
   static getById = async(req,res) => {
     try {
-      
       const reqid = req.params.id
-    
-      const find = await User.findById(reqid)
-      res.send(find)
+      const find = await User.findById(reqid).exec()
+      res.status(200).send({find})
     } catch (error) {
       console.log(error)
       res.status(400).send({ error: "Erro com a lógica da função" })
@@ -46,14 +38,23 @@ class Controllerfunctions {
 
   static createUser = (req, res) => {
     try {
-      let newuser =new User({
-        name: User.name,
-        email: User.email,
-        password: User.password
-      })
+      const reqname = req.body.name
+      const reqemail = req.body.email
+      const reqpassword = req.body.password
+
+      if(reqname && reqemail && reqpassword){
+        let newuser = {
+          "name":reqname,
+          "email":reqemail,
+          "password":reqpassword
+        }
+
+         User.push(newuser) // não ta funcionando usar essas funções na array do objeto
+         return res.send({"Message":"Alterado"},[findid])
+        res.send({"Message":"Usuário criado com sucesso",User})
+      }
 
 
-      res.status(201).send([{ Message: "Usuário criado" },{ newuser }])
     } catch (error) {
       console.log(error)
       res.status(400).send({ error: "Erro com a lógica da função" })
@@ -64,8 +65,20 @@ class Controllerfunctions {
 
   static updateUser = async (req, res) => {
     try {
-      const id = (req.params.id)
-      const user = (req.body)
+      const reqid = req.params.id
+      //verificar se o id que o cliente colocou é igual ao da propriedade do objeto
+      let find = User.find( () => User._id == reqid)
+
+      let name = req.body.name
+      let email = req.body.email
+      let password = req.body.password
+      
+      if(name && email && password){
+        let idreq = req.params.id
+        let findid =  User.map(() => User._id == idreq) // não ta funcionando usar essas funções na array do objeto
+        return res.send({"Message":"Alterado"},[findid]) 
+      }
+      
 
     } catch (error) {
       console.log(error)
