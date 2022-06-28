@@ -10,7 +10,7 @@ class Controllerfunctions {
     res.status(200).send({"Message":"Olá , seja bem vindo!"})
   }
 
-  static getAll = (req, res) => {
+  static getAllUsers = (req, res) => {
     try {
       res.send([User])
 
@@ -98,7 +98,47 @@ class Controllerfunctions {
   }
 
 
+  static getAllProducts = (req,res) =>{
+    try {
+      
+    } catch (error) {
+      
+    }
+  }
 
+
+  static getProductById = (req,res) => {
+    try {
+      
+    } catch (error) {
+      
+    }
+  }
+
+  static createProduct = (req,res) => {
+    try {
+      
+    } catch (error) {
+      
+    }
+  }
+
+  static  updateProduct = (req,res) => {
+    try {
+      
+    } catch (error) {
+      
+    }
+  }
+
+  static deleteProduct = (req,res) => {
+    try {
+      
+    } catch (error) {
+      
+    }
+  }
+ 
 }
 
 
