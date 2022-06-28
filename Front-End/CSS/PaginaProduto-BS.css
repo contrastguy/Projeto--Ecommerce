@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+#imagens {
+    width: 50vw
+}
+
+.float-pai {
+    width: 140px;
+}
+
+.float-filho {
+    /* deixar todos os três quadrados menores , usando o float */
+    width: 25%;
+    float: left;
+    background-color: #6E6E6E;
+    height: 35px;
+    margin-left: 10px;
+}
+
+#img1 {
+    
+    background: #6E6E6E;
+    transform: translateY(-70%);
+    position: relative;
+    top:450px;
+}
+
+#lista-midia{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: 126px;;
+}
+
+#container-footer{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#h5-footer{
+    color:white;
+}
+
+
+#container-fale-conosco{
+    width:200px;
+    height: 100px;;
+    color:white;
+}
+
+#Copyright{
+    text-align: center;
+    margin-right: 100px;
+    color:white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
