@@ -1,5 +1,6 @@
 import express from "express"
 import Controllerfunctions from "../controllers/controller.js"
+import Loginfunctions from "../controllers/logincontroller.js"
 
 const routes = express.Router()
 
@@ -36,6 +37,10 @@ routes.put("/updateProduct/:id",Controllerfunctions.updateProduct)
 //deleta um produto
 routes.delete("/deleteProduct/:id",Controllerfunctions.deleteProduct)
 
+//registro de usuário
+routes.post("/userRegister",Loginfunctions.register)
 
+//login do usuário
+routes.post("/userLogin",Loginfunctions.Login)
 
 export default routes
