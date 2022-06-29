@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/PaginaProduto.css">
+    <title>Galeria de produtos</title>
+</head>
+
+<body>
+    <header>
+        <div id="linhaInício"></div>
+        <div id="head">
+
+            <img id="Logo" src="IMAGENS/Logo.png" alt="Logo">
+
+
+            <!-- // -->
+            <nav>
+                <ul>
+                    <li class="lista" ><a href="Home.html">Home</a></li>
+                    <li class="lista"> <a href="GaleriaProdutos.html">Comprar</a> </li>
+                    <li class="lista"> <a href="PaginaProduto.html">Vender</a> </li>
+                    <li class="lista"> <a href="Home.html">Contato</a> </li>
+                    <li class="lista"> <a href="Carrinho.html"><img src="IMAGENS/carrinho-de-compras.png" alt="Carrinho de compras"></a></li>
+                    <li class="lista"><a href="Home.html"><img src="IMAGENS/lar.png" alt=""></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- // -->
+    <main>
+        <div class="conteudoPrincipal">
+            <div id="imagens">
+                <div class="float-pai">
+                    <div class="float-filho"><img src="" alt=""></div>
+                    <div class="float-filho"><img src="" alt=""></div>
+                    <div class="float-filho"> <img src="" alt=""></div>
+                </div>
+            </div>
+            <div id="img1"><img src="IMAGENS/Banner.png" alt="default"></div>
+            <div id="caracteristicas">
+                <h3>PRODUTO 01</h3>
+                <h4>R$00,00</h4>
+                <div id="cor">
+                    Cor: branco
+                    <input type="radio" name="" id="">
+                </div>
+                <div id="tamanho">
+                    Tamanho
+                    <button class="botao" >GG</button>
+                </div>
+                <div id="quantidade">
+                    Quantidade
+                    <button class="botao">2</button>
+                </div>
+                <ul>
+                    <li> <button id="addcarrinho" onclick="addcarrinho()" >Adicionar ao Carrinho</button></li>
+                    <li><button id="curtir" onclick="botaocurtir()"><img src="IMAGENS/coracao.png" alt="coração"></button></li>
+                </ul>
+                <button id="comprar" onclick="comprar()"> <strong>Comprar</strong> </button>
+            </div>
+            <div id="descriçao">
+                <strong>Descrição do Produto</strong>
+                <div id="txtdescriçao">
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+    <!-- // -->
+    <footer>
+        <div class="conteudofooter">
+            <div id="sigaredes">
+                <h4>NOS SIGA NAS REDES</h4>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="IMAGENS/facebook.png" alt="logo-facebook"></a> 
+                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"> <img src="IMAGENS/twitter.png" alt="logo-twitter"></a> 
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img src="IMAGENS/youtube.png" alt="logo-youtube"></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="IMAGENS/instagram.png" alt="logo-instagram"></a>
+            </div>
+
+            <div id="recebaofertas">
+                <h4>RECEBA OFERTAS</h4>
+                <input type="email" name="" placeholder="Coloque seu e-mail aqui!">
+                <button id="inscrever" onclick="inscrever()" ><strong>SE INSCREVA</strong></button>
+            </div>
+
+            <div id="faleconosco">
+                <h4>FALE CONOSCO</h4>
+                <p>(XX)X-XXXX-XXXX</p>
+                <p>contato@contato.com</p>
+            </div>
+
+
+        </div>
+        2022 by TERA
+    </footer>
+    <script src="JS/PaginaProduto.js"></script>
+</body>
+
+</html>
