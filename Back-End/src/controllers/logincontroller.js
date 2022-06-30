@@ -23,13 +23,13 @@ class Loginfunctions {
     static Login = async(req,res) => {
         try {
             const {email,password}= req.body
-            const user = await User.findOne({email}).select(password)
+            const user = await User.findOne({email}).select("+password")
             if(!user){
-                res.send({"Message":"Usuário não existe"})
+              return  res.status(400).send({"Message":"Usuário não existe"})
             }
-            const thesame = await bcrypt.compare("password",user.password)
+            const thesame = await bcrypt.compare(password,user.password)
             if(!thesame){
-                res.send({"Message":"Credenciais incorretas"})
+               return res.status(400).send({"Message":"Credenciais incorretas"})
             }else{
                 user.password = undefined
                 return res.send({
