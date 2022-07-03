@@ -1,3 +1,13 @@
+const url = "http://localhost:1313/root/";
+
+fetch(url)
+.then( (response) => {
+    response.json()
+    .then( (data) => {
+        console.log(data)
+    } )    
+} )
+
 function validar(){
 
     let email = document.getElementById('email')
