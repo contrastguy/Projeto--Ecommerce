@@ -1,13 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/Carrinho.css">
-    <title>Document</title>
+    <title>OnlineShop - Seu Carrinho</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div id="pageContainer">
+    
+    <header>
+      <div id="gray-bar"></div>
+      <a href="./index.html">
+          <img src="./IMAGENS/Home/Logo.png" id="logo-home" alt="Logo da OnlineShop">
+      </a>
+
+      <nav id="menu">
+        <a href="./index.html">HOME</a> 
+        <a href="./index.html#products">COMPRAR</a> 
+        <a href="#">VENDER</a> 
+        <a href="#down">CONTATO</a>
+        <div id="icons">
+            <a href="./Carrinho.html"><img src="./IMAGENS/Home/Carrinho de Compra.png" alt="Seu Carrinho de Compras"></a>
+            <a href="./login.html"><img src="./IMAGENS/Home/PerfilUsuário.png" alt="Área de Perfil do Usuário / Login"></a>
+        </div>    
+    </nav>
+  </header>
+
+    <main>
+
+      <div id="main-wrapper1">
+        <section id="myProducts">
+          <div id="list-wrap">
+            <h2>Minha Cesta</h2>
+            <ul>
+              <li>Produto</li>
+              <li>Qtd.</li>
+              <li>Entrega</li>
+              <li>Preço</li>
+            </ul>
+          </div>
+            <div id="productText">
+              <a href="#">
+                <img
+                src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80"
+                alt="Miniatura da imagem do produto">
+              </a>
+            
+              <div id="descriptionText">
+                <p class="productDescription"><span>Camiseta Adidas listras com frase</span></p>
+                <p class="productDescription"><span>Cor:</span> Branco</p>
+                <p class="productDescription"><span>Tamanho:</span> GG</p>
+              </div>
+
+              <div id="quantityText">
+                <form action="">
+                  <input type="number" id="productQuantity" name="quantity" placeholder="1">
+                  <button type="reset" value="cancel">remover</button>
+                </form>
+              </div> 
+
+              <div id="deliveryText">
+                <p>receba até <span>21 de Abril</span></p>
+              </div>
+
+              <div id="amountText">
+                <p class="oldPrice">R$ 100,00</p>
+                <span id="amount">R$ 69,90</span>
+                <p id="credit">em 1x no cartão</p>
+              </div>
+          
+            </div>
+        </section>
+
+        <section id="delivery">
+          <div id="CEP-Container">
+            <h2>Cálculo de Frete</h2>
+            <form action="">
+              <input type="number" id="CEP" name="CEP" placeholder="Insira seu CEP" >
+              <input type="submit" value="OK" id="CEP-submit">
+            </form>
+          </div>
+          <div id="CEP-Options">
+            <form action="">
+              <div class="option-wrapper">
+                <input type="radio" class="option" name="option" value="1">
+                <label for="option">Receba em até 10 dias úteis - <span>Grátis</span></label>
+              </div>
+
+              <div class="option-wrapper">
+                <input type="radio" class="option" name="option" value="2">
+                <label for="option">Receba em até 5 dias úteis - <span>R$ 15,00</span></label>
+              </div>
+              
+              <div class="option-wrapper">
+                <input type="radio" class="option" name="option" value="3">
+                <label for="option">Receba amanhã - <span>R$ 25,00</span></label>
+              </div>
+            </form>
+          </div>
+        </section>
+     </div>
+
+     <div id="main-wrapper2">
+      <section id="abstract">
+        <h2>Resumo do Pedido</h2>
+  
+        <div id="productAbstract">
+          <ul>
+            <div class="products-list">
+              <li><p class="abstract">1 Produto</p><p class="abstract">R$ 69,90</p></li>
+              
+            </div>
+            <li><span class="abstract">frete</span><span class="abstract">grátis</span></li>
+          </ul>
+        </div>
+  
+        <div id="totalContainer">
+          <div class="total-resume">
+            <h3>Total</h3>
+            <div class="total-amount">
+              <h3>R$ 69.90</h3>
+              <span>em 1x no cartão</span>
+            </div>
+          </div>
+  
+          <button type="submit" class="submit-resume" value="Comprar">Comprar</button>
+          
+          <a href="#">
+            <p>adicionar mais produtos</p>
+          </a>
+        </div>
+      </section>
+     </div>
+
+    </main>
+
+   
+
+    <footer>
+      <div id="social">
+          <h3>NOS SIGA NAS REDES</h3>
+          <a href="#"><img src="./IMAGENS/Home/Facebook.png" alt="Logo do Facebook"></a>
+          <a href="#"><img src="./IMAGENS/Home/Twitter.png" alt="Logo do Instagram"></a>
+          <a href="#"><img src="./IMAGENS/Home/Youtube.png" alt="Logo do Youtube"></a>
+          <a href="#"><img src="./IMAGENS/Home/Instagram.png" alt="Logo do Instagram"></a>
+      </div>
+
+      <div id="subscription">
+          <h3>RECEBA OFERTAS</h3>
+          <form action="">
+              <input type="email" id="email" name="email" placeholder="Coloque seu e-mail aqui!">
+              <input type="submit" value="SE INSCREVA" id="submit-email">
+          </form>
+          <p>2022 by TERA</p>
+      </div>
+
+      <div id="contact">
+          <h3>FALE CONOSCO</h3>
+          <p>(XX) X-XXXX-XXXX</p>
+          <p>contato@contato.com</p>
+
+      </div>
+  </footer>
+
+  </div>
   <script src="JS/Carrinho.js"></script>  
 </body>
 </html>
