@@ -1,12 +1,6 @@
 const url = "http://localhost:1313/root/";
 
-fetch(url)
-.then( (response) => {
-    response.json()
-    .then( (data) => {
-        console.log(data)
-    } )    
-} )
+
 
 function validar(){
 
@@ -20,4 +14,14 @@ function validar(){
     }else{
         alert('[Error] E-mail ou senha inválidos')
     }
+
+    //lembrar que para fazer a chamada da API , tem que ser dentro de uma função
+    fetch(url)
+    .then( (response) => {
+        response.json()
+        .then( (data) => {
+            console.log(data)
+        } )    
+    } )
+
 }
